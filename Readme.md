@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Владислав Шивцов](https://up.htmlacademy.ru/htmlcss/27/user/814291).
-* Наставник: `Неизвестно`.
+* Наставник: [Виктор Кан](https://htmlacademy.ru/profile/viktorkan).
 
 ---
 
