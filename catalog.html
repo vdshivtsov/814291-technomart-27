@@ -7,9 +7,11 @@
   <body>
 
     <header>
-      <a>
-        <img src="https://via.placeholder.com/220x47" width="220" height="47" alt="Логотип Техномарт">
-      </a>
+      <p>
+        <a>
+          <img src="https://via.placeholder.com/220x47" width="220" height="47" alt="Логотип Техномарт">
+        </a>
+      </p>
 
       <!-- Здесь будет форма поиска -->
 
@@ -46,8 +48,11 @@
           <a href="#">Равшан Джамшутович</a>
           <a href="#">Выход</a>
         </p>
-        <a href="#">Мои заказы</a>
-        <a href="#">Личный кабинет</a>
+        <p>
+          <a href="#">Мои заказы</a>
+          <a href="#">Личный кабинет</a>
+        </p>
+
       </section>
 
       <nav>
@@ -81,18 +86,25 @@
       <h1>Перфораторы</h1>
 
       <ul>
-        <li><a href="index.html"><span></span></a></li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li><a href="#">Инструмент</a></li>
+        <li>
+          <a href="index.html">На главную</a>
+        </li>
+        <li>
+          <a href="catalog.html">Каталог</a>
+        </li>
+        <li>
+          <a href="#">Инструмент</a>
+        </li>
         <li>Перфораторы</li>
       </ul>
 
       <section>
-        <h2>Фильтр товаров</h2>
+        <h2>Фильтр:</h2>
 
-        <!-- Здесь будет форма фильтра товаров по цене, ниже, я предполагаю, тоже должны быть элементы формы, но в задании эти элементы не выделены красным, разметил пока как-то так -->
+        <p>Цена:</p>
+        <!-- тут будет элемент формы диапазон цены -->
 
-        <p>Производители</p>
+        <p>Производители:</p>
         <ul>
           <li>Bosh</li>
           <li>Интерскол</li>
@@ -101,7 +113,7 @@
           <li>Hitachi</li>
         </ul>
 
-        <p>Питание</p>
+        <p>Питание:</p>
         <ul>
           <li>Аккумуляторные</li>
           <li>Сетевые</li>
@@ -111,9 +123,29 @@
       </section>
 
       <section>
-        <h2>Сортировка товаров</h2>
+        <h2>Сортировка:</h2>
 
-        <!-- Здесь будет блок сортировки, сейчас выделен красным -->
+        <ul>
+          <li>
+            <a href="#">По цене</a>
+          </li>
+          <li>
+            <a href="#">По типу</a>
+          </li>
+          <li>
+            <a href="#">По функционалу</a>
+          </li>
+        </ul>
+
+        <!-- Разделил на два отдельных списка, так как сортировка логически относится ко всем товарам, а направление сортировки к выведенному контенту, не ошибаюсь? -->
+        <ul>
+          <li>
+            <a href="#">По убыванию</a>
+          </li>
+          <li>
+            <a href="#">По возрастанию</a>
+          </li>
+        </ul>
 
       </section>
 
@@ -127,7 +159,9 @@
                 Перфоратор BOSCH BFG 3000
               </a>
             </h3>
-            <img src="https://via.placeholder.com/145x100" width="145" height="100" alt="Перфоратор BOSCH BFG 3000">
+            <p>
+              <img src="https://via.placeholder.com/145x100" width="145" height="100" alt="Перфоратор BOSCH BFG 3000">
+            </p>
             <div>
               <p>22500 Р.</p>
               <p>15500 Р.</p>
@@ -139,45 +173,9 @@
                 Перфоратор BOSCH BFG 6000
               </a>
             </h3>
-            <img src="https://via.placeholder.com/145x100" width="145" height="100" alt="Перфоратор BOSCH BFG 6000">
-            <div>
-              <p>30500 Р.</p>
-              <p>25500 Р.</p>
-            </div>
-          </li>
-          <li>
-            <h3>
-              <a href="#">
-                Перфоратор BOSCH BFG 2000
-              </a>
-            </h3>
-            <div>
-              <p>12500 Р.</p>
-            </div>
-            <div>
-              <a href="#">Купить</a>
-              <a href="#">В закладки</a>
-            </div>
-          </li>
-          <li>
-            <h3>
-              <a href="#">
-                Перфоратор BOSCH BFG 3000
-              </a>
-            </h3>
-            <img src="https://via.placeholder.com/145x100" width="145" height="100" alt="Перфоратор BOSCH BFG 3000">
-            <div>
-              <p>22500 Р.</p>
-              <p>15500 Р.</p>
-            </div>
-          </li>
-          <li>
-            <h3>
-              <a href="#">
-                Перфоратор BOSCH BFG 6000
-              </a>
-            </h3>
-            <img src="https://via.placeholder.com/145x100" width="145" height="100" alt="Перфоратор BOSCH BFG 6000">
+            <p>
+              <img src="https://via.placeholder.com/145x100" width="145" height="100" alt="Перфоратор BOSCH BFG 6000">
+            </p>
             <div>
               <p>30500 Р.</p>
               <p>25500 Р.</p>
@@ -204,7 +202,9 @@
                 Перфоратор BOSCH BFG 3000
               </a>
             </h3>
-            <img src="https://via.placeholder.com/145x100" width="145" height="100" alt="Перфоратор BOSCH BFG 3000">
+            <p>
+              <img src="https://via.placeholder.com/145x100" width="145" height="100" alt="Перфоратор BOSCH BFG 3000">
+            </p>
             <div>
               <p>22500 Р.</p>
               <p>15500 Р.</p>
@@ -216,7 +216,52 @@
                 Перфоратор BOSCH BFG 6000
               </a>
             </h3>
-            <img src="https://via.placeholder.com/145x100" width="145" height="100" alt="Перфоратор BOSCH BFG 6000">
+            <p>
+              <img src="https://via.placeholder.com/145x100" width="145" height="100" alt="Перфоратор BOSCH BFG 6000">
+            </p>
+            <div>
+              <p>new</p>
+              <p>30500 Р.</p>
+              <p>25500 Р.</p>
+            </div>
+          </li>
+          <li>
+            <h3>
+              <a href="#">
+                Перфоратор BOSCH BFG 2000
+              </a>
+            </h3>
+            <p>
+              <img src="https://via.placeholder.com/145x100" width="145" height="100" alt="Перфоратор BOSCH BFG 6000">
+            </p>
+            <div>
+              <p>12500 Р.</p>
+            </div>
+          </li>
+          <li>
+            <h3>
+              <a href="#">
+                Перфоратор BOSCH BFG 3000
+              </a>
+            </h3>
+            <p>
+              <img src="https://via.placeholder.com/145x100" width="145" height="100" alt="Перфоратор BOSCH BFG 3000">
+            </p>
+            <div>
+              <p>new</p>
+              <p>22500 Р.</p>
+              <p>15500 Р.</p>
+            </div>
+          </li>
+          <li>
+            <h3>
+              <a href="#">
+                Перфоратор BOSCH BFG 6000
+              </a>
+            </h3>
+            <p>
+              <img src="https://via.placeholder.com/145x100" width="145" height="100" alt="Перфоратор BOSCH BFG 6000">
+            </p>
             <div>
               <p>30500 Р.</p>
               <p>25500 Р.</p>
@@ -228,33 +273,48 @@
                 Перфоратор BOSCH BFG 2000
               </a>
             </h3>
+            <p>
+              <img src="https://via.placeholder.com/145x100" width="145" height="100" alt="Перфоратор BOSCH BFG 6000">
+            </p>
             <div>
-              <p>new</p>
-              <p><span></span></p>
               <p>12500 Р.</p>
-            </div>
-            <div>
-              <a href="#">Купить</a>
-              <a href="#">В закладки</a>
             </div>
           </li>
         </ul>
 
-        <!-- Здесь будет пагинация, размечена красным -->
+        <ol>
+          <li>
+            <a href="#">1</a>
+          </li>
+          <li>
+            <a href="#">2</a>
+          </li>
+          <li>
+            <a href="#">3</a>
+          </li>
+          <li>
+            <a href="#">Следующая</a>
+          </li>
+        </ol>
 
       </section>
 
       <section>
         <h2>Пара слов о перфораторах</h2>
 
-        <!-- Здесь будет раздел Пара слов о перфораторах, размечено красным -->
+        <p>
+          Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
+          Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+        </p>
 
       </section>
 
     </main>
 
     <footer>
-      <img src="https://via.placeholder.com/220x68" width="220" height="68" alt="Логотип Техномарт">
+      <p>
+        <img src="https://via.placeholder.com/220x68" width="220" height="68" alt="Логотип Техномарт">
+      </p>
       <p>
         г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55
       </p>
