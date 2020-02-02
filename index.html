@@ -12,7 +12,11 @@
         <img src="img/logo-header.png" width="220" height="47" alt="Логотип компании Техномарт">
       </a>
 
-      <!-- Здесь будет форма поиска  -->
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <label class="visually-hidden" for="search-field">Строка поиска</label>
+        <input type="search" name="search" id="search-field" placeholder="Поиск:">
+        <!-- Кнопка по-моему не обязательна, так как submit обрабатывается по нажатию enter или в каких-то случаях может не сработать, поэтому лучше добавить? -->
+      </form>
 
       <ul>
         <li>
@@ -34,9 +38,15 @@
 
       <div>
         <p>
-          <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+          <a href="tel:+78125550555">
+            <span class="visually-hidden">Наш телефон:</span>
+              +7 (812) 555-05-55
+          </a>
         </p>
-        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p>
+          <span class="visually-hidden">Наш адрес:</span>
+            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+        </p>
       </div>
 
       <section>
@@ -135,7 +145,7 @@
               <a href="#">Перфоратор BOSCH BFG 9000</a>
             </h3>
             <div>
-              <img src="img/perforator-1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
+              <img src="img/perforator-1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000 - производитель инструмента Bosch создал эту модель для использования как в быту, так и на производстве. Перфоратор предназначен для создания отверстий в металле, в дереве и других твердых материалах. В режиме «сверление с ударом» или «долбление» инструмент способен продолбить отверстие в бетоне, кирпиче, керамике. А если переключиться в режим «завинчивание» инструмент превращается в обычный шуруповерт, которым можно вкручивать саморезы.">
             </div>
             <div>
               <p>32500 Р.</p>
@@ -147,7 +157,7 @@
               <a href="#">Перфоратор BOSCH BFG 3000</a>
             </h3>
             <div>
-              <img src="img/perforator-2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
+              <img src="img/perforator-2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000 - максимальная производительность при минимуме вибраций. Высокая производительность сверления и увеличение производительности долбления на 20 % по сравнению с другими перфораторами этого класса. Низкий уровень вибрации для не утомительной работы благодаря системе гашения вибрации Vibration Control от Bosch. Сменный патрон для быстрой смены между ударным сверлением в бетоне и сверлением без удара в древесине и металле.">
             </div>
             <div>
               <p>22500 Р.</p>
@@ -159,7 +169,7 @@
               <a href="#">Перфоратор BOSCH BFG 6000</a>
             </h3>
             <div>
-              <img src="img/perforator-3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
+              <img src="img/perforator-3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000 - самый быстрый универсальный перфоратор в классе. Разнообразное применение для долбежных и сверлильных работ, а также при выполнении работ с полой сверлильной коронкой. Сверлит на 30% быстрее по сравнению с аналогичными инструментами других производителей. Низкий уровень вибрации для неутомительной работы благодаря системе гашения вибрации Vibration Control от Bosch.">
             </div>
             <div>
               <p>30500 Р.</p>
@@ -171,7 +181,7 @@
               <a href="#">Перфоратор BOSCH BFG 2000</a>
             </h3>
             <div>
-              <img src="img/perforator-2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
+              <img src="img/perforator-2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000 - имеет два режима работы - сверление с ударом и чистый удар. Выбор между ними осуществляется посредством тумблера. Благодаря патрону SDS-max, можно устанавливать профессиональную оснастку, а также быстро менять её в процессе работы. Дополнительная рукоять помогает прочно держать инструмент в руках, что особенно актуально для работы в режиме долбления.">
             </div>
             <div>
               <p>12500 Р.</p>
@@ -316,8 +326,12 @@
       <div>
         <img src="img/logo-footer.png" width="220" height="68" alt="Логотип компании Техномарт">
       </div>
-      <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55</p>
-
+      <p>
+        <span class="visually-hidden">Наш адрес:</span>
+          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+        <span class="visually-hidden">Наш телефон:</span>
+          +7 (812) 555-05-55
+      </p>
       <ul>
         <li>
           <a href="#">Компания</a>
@@ -351,7 +365,10 @@
         </li>
       </ul>
 
-      <p>© 2010–2019 Компания «Техномарт» Все права защищены</p>
+      <p>
+        <span class="visually-hidden">Копирайт</span>
+        © 2010–2019 Компания «Техномарт» Все права защищены
+      </p>
 
       <ul>
         <li>
@@ -372,6 +389,35 @@
         Разработано — <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
       </p>
     </footer>
+
+    <section>
+      <h2 class="visually-hidden">Напишите нам</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <div>
+          <label for="name-field">Ваше имя:</label>
+          <input type="text" name="name" id="name-field" placeholder="Имя Фамилия">
+        </div>
+        <div>
+          <label for="email-field">Ваш e-mail:</label>
+          <input type="email" name="email" id="email-field" placeholder="email@example.com">
+        </div>
+        <div>
+          <label for="message-field">Текст письма:</label>
+          <textarea name="message" id="message-field" placeholder="В свободной форме"></textarea>
+        </div>
+        <button type="submit">Отправить</button>
+      </form>
+      <button type="button">Закрыть</button>
+    </section>
+
+    <section>
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <div>
+        <!-- Когда будем подключать интерактивную карту через JS, изображение скроем, а пока, чтобы обеспечить доступность, вставляем как контентное изображение с атрибутом alt. Или же можно в div добавить скрытый абзац с адресом, а диву задать изображение как бэкграунд, а поверх него добавить карту на JS -->
+        <img src="img/popup-map.png" alt="Мы располагаемся по адресу: город Санкт-Петербург, улица Большая Конюшенная, дом 19/8">
+      </div>
+      <button type="button">Закрыть</button>
+    </section>
 
     <!-- A web browser page reloading plugin for the Sublime Text 3 editor -->
     <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
