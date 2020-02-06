@@ -111,9 +111,27 @@
       <section>
         <h2>Фильтр:</h2>
 
-        <form action="https://echo.htmlacademy.ru" method="get">
+        <!-- Были проблемы с разделителем "-" в атрибуде oninput формы (браузер выдавал ошибку "catalog.html:115 Uncaught SyntaxError: Invalid left-hand side in assignment" считая, что это бинарный операнд "минус"), пришлось отступить от стиля оформления кода. Вместо min-cost-val, min-cost, max-cost-val, max-cost написал стилем camelCase minCostVal, minCost, maxCostVal, maxCost, чтобы решить проблему. -->
+        <form action="https://echo.htmlacademy.ru" method="get" oninput="minCostVal.value = minCost.value; maxCostVal.value = maxCost.value;">
 
-          <!-- тут будет элемент формы диапазон цены, сейчас выделено красным -->
+          <fieldset>
+            <legend>Цена:</legend>
+            <!-- Посмотрел варианты реализации двойного ползунка понял, что без JS тут не обойтись. Понравился вот этот вариант https://codepen.io/sakamies/pen/qOEGLJ, что о нем думаешь? Если посмотреть html код инспектором, на страницу добавляется по-факту 2 input'а, что подходит нам для обеспечения доступности, что я и сделал. -->
+            <div>
+              <label class="visually-hidden" for="min-cost-field">Выбрать минимальную цену</label>
+              <input type="range" name="minCost" id="min-cost-field" min="0" max="30000" step="1" value="0">
+              <label class="visually-hidden" for="max-cost-field">Выбрать максимальную цену</label>
+              <input type="range" name="maxCost" id="max-cost-field" min="0" max="30000" step="1" value="30000">
+            </div>
+            <div>
+              <label class="visually-hidden" for="min-cost-val-field">Выбранная минимальная цена</label>
+              <label class="visually-hidden" for="max-cost-val-field">Выбранная максимальная цена</label>
+              <output name="minCostVal" id="min-cost-val-field">0</output>
+              <!-- Для спана потом сможем задать отступы. Смотриться, имхо, уместно, так как output - инлайновые свойства. -->
+              <span>-</span>
+              <output name="maxCostVal" id="max-cost-val-field">30000</output>
+            </div>
+          </fieldset>
 
           <fieldset>
             <legend>Производители:</legend>
