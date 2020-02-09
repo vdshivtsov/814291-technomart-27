@@ -136,6 +136,16 @@ html {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.goods-actions__item_unempty a {
+  background-color: #ee3643;
+}
+
+/*Слудующего свойства нет в стайлгайде, прикрутил эффект как у .button*/
+.goods-actions__item_unempty a:hover,
+.goods-actions__item_unempty a:focus {
+  background-color: #ca2c37;
+}
+
 .goods-actions__item_checkout a {
   background-color: #63a63e;
 }
@@ -175,7 +185,11 @@ html {
   color: #32425c;
 }
 
-.authorization a {
+.authorization__container {
+  background-color: #ffffff;
+}
+
+.authorization__button {
   font-size: 21px;
   line-height: 21px;
   color: #000000;
@@ -183,13 +197,53 @@ html {
   text-align: center;
 }
 
-.authorization a:hover,
-.authorization a:focus {
+.authorization__button:hover,
+.autauthorization__button:focus {
   color: #ee3643;
 }
 
-.authorization a:active {
+.authorization__button:active {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.authorization__name {
+  font-size: 21px;
+  line-height: 21px;
+  text-align: left;
+  color: #000000;
+  background-color: transparent;
+}
+
+.authorization__name:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.authorization__logout {
+  color: #c5c5c5;
+}
+
+.authorization__logout:hover {
+  color: #32425C;
+}
+
+.authorization__logout:active {
+  color: #c5c5c5;
+}
+
+.authorization__personal {
+  font-size: 16px;
+  text-align: left;
+  color: #32425c;
+  text-decoration: underline;
+}
+
+.authorization__personal:hover,
+.authorization__personal:focus {
+  color: #ee3643;
+}
+
+.authorization__personal:active {
+  color: rgba(50, 66, 92, 0.3);
 }
 
 .header__navigation {
