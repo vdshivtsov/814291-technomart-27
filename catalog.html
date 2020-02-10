@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Перфораторы</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -11,7 +12,7 @@
 
     <header class="header">
       <div class="header__top">
-        <a class="header__logo our-logo">
+        <a class="header__logo our-logo" href="index.html">
           <img src="img/logo.svg" width="109" height="19" alt="Логотип компании Техномарт">
         </a>
 
@@ -61,7 +62,7 @@
               <span class="visually-hidden">Перейти в личный кабинет пользователя:</span>
               Равшан Джамшутович
             </a>
-            <a class="authorization__logout"href="#">Выход</a>
+            <a class="authorization__logout" href="#">Выход</a>
           </div>
           <div>
             <a class="authorization__personal authorization__personal_orders" href="#">Мои заказы</a>
@@ -98,10 +99,10 @@
       </nav>
     </header>
 
-    <main>
-      <h1>Перфораторы</h1>
+    <main class="main">
+      <h1 class="main__title">Перфораторы</h1>
 
-      <ul>
+      <ul class="main__breadcrumbs">
         <li>
           <a href="index.html">На главную</a>
         </li>
@@ -111,14 +112,17 @@
         <li>
           <a href="#">Инструмент</a>
         </li>
-        <li>Перфораторы</li>
+        <li><a>Перфораторы</a></li>
       </ul>
 
-      <section>
-        <h2>Фильтр:</h2>
+      <section class="filtres">
+
+        <!-- Красная зона -->
+
+        <h2 class="filtres__title">Фильтр:</h2>
 
         <!-- Были проблемы с разделителем "-" в атрибуде oninput формы (браузер выдавал ошибку "catalog.html:115 Uncaught SyntaxError: Invalid left-hand side in assignment" считая, что это бинарный операнд "минус"), пришлось отступить от стиля оформления кода. Вместо min-cost-val, min-cost, max-cost-val, max-cost написал стилем camelCase minCostVal, minCost, maxCostVal, maxCost, чтобы решить проблему. -->
-        <form action="https://echo.htmlacademy.ru" method="get" oninput="minCostVal.value = minCost.value; maxCostVal.value = maxCost.value;">
+        <form class="filtres__form" action="https://echo.htmlacademy.ru" method="get" oninput="minCostVal.value = minCost.value; maxCostVal.value = maxCost.value;">
 
           <fieldset>
             <legend>Цена:</legend>
@@ -139,62 +143,66 @@
             </div>
           </fieldset>
 
-          <fieldset>
-            <legend>Производители:</legend>
-            <ul>
-              <li>
-                <label>
-                  <input type="checkbox" name="bosh" checked>
+          <!-- Конец красной зоны -->
+
+          <fieldset class="filtres__manufact manufact-set">
+            <legend class="manufact-set__title">Производители:</legend>
+            <ul class="manufact-set__list">
+              <li class="manufact-set__item">
+                <label class="manufact-set__label">
+                  <input class="manufact-set__checkbox" type="checkbox" name="bosh" checked>
                   Bosh
                 </label>
               </li>
-              <li>
-                <label>
-                  <input type="checkbox" name="interscol">
+              <li class="manufact-set__item manufact-set__item_disabled">
+                <label class="manufact-set__label">
+                  <input class="manufact-set__checkbox" type="checkbox" name="interscol" disabled>
                   Интерскол
                 </label>
               </li>
-              <li>
-                <label>
-                  <input type="checkbox" name="makita" checked>
+              <li class="manufact-set__item">
+                <label class="manufact-set__label">
+                  <input class="manufact-set__checkbox" type="checkbox" name="makita" checked>
                   Makita
                 </label>
               </li>
-              <li>
-                <label>
-                  <input type="checkbox" name="dewalt">
+              <li class="manufact-set__item">
+                <label class="manufact-set__label">
+                  <input class="manufact-set__checkbox" type="checkbox" name="dewalt">
                   Dewalt
                 </label>
               </li>
-              <li>
-                <label>
-                  <input type="checkbox" name="hitachi">
+              <li class="manufact-set__item">
+                <label class="manufact-set__label">
+                  <input class="manufact-set__checkbox" type="checkbox" name="hitachi">
                   Hitachi
                 </label>
               </li>
             </ul>
           </fieldset>
 
-          <fieldset>
-            <legend>Питание:</legend>
-            <ul>
-              <li>
-                <label>
-                  <input type="radio" name="power" value="rechargeable" checked>
+          <fieldset class="filtres__power power-set">
+            <legend class="power-set__title">Питание:</legend>
+            <ul class="power-set__list">
+              <li class="power-set__item">
+                <label class="power-set__label">
+                  <input class="power-set__radio" type="radio" name="power" value="rechargeable" checked>
                   Аккумуляторные
                 </label>
               </li>
-              <li>
-                <label>
-                  <input type="radio" name="power" value="powered">
+              <li class="power-set__item power-set__item_disabled">
+                <label class="power-set__label">
+                  <input class="power-set__radio" type="radio" name="power" value="powered" disabled>
                   Сетевые
                 </label>
               </li>
             </ul>
           </fieldset>
-          <button type="submit">Показать</button>
+          <button class="filtres__button" type="submit">Показать</button>
         </form>
       </section>
+
+      <!-- Красная зона -->
 
       <section>
         <!-- Тут, по-моему, ничего менять не нужно, все логически правильно разделено, это не форма, так как предполагается, что будет осуществляться сортировка уже загруженных на страницу элементов, добавил только описание спискам для слабовидящих -->
@@ -223,117 +231,121 @@
 
       </section>
 
-      <section>
-        <h2>Перечень товаров</h2>
+      <!-- Конец красной зоны -->
 
-        <ul>
-          <li>
-            <h3>
-              <a href="#">Перфоратор BOSCH BFG 3000</a>
+      <section class="goods">
+        <h2 class="visually-hidden">Перечень товаров</h2>
+
+        <ul class="goods__list products">
+          <li class="products__item">
+            <h3 class="products__title">
+              <a class="products__link" href="#">Перфоратор BOSCH BFG 3000</a>
             </h3>
-            <div>
-              <img src="img/perforator-2.jpg" width="145" height="100" alt="Перфоратор BOSCH BFG 3000 - максимальная производительность при минимуме вибраций. Высокая производительность сверления и увеличение производительности долбления на 20 % по сравнению с другими перфораторами этого класса. Низкий уровень вибрации (всего 13 м/s²) для не утомительной работы благодаря системе гашения вибрации Vibration Control от Bosch. Сменный патрон для быстрой смены между ударным сверлением в бетоне и сверлением без удара в древесине и металле.">
+            <div class="products__img-container">
+              <img class="products__img" src="img/perforator-2.jpg" width="145" height="100" alt="Перфоратор BOSCH BFG 3000 - максимальная производительность при минимуме вибраций. Высокая производительность сверления и увеличение производительности долбления на 20 % по сравнению с другими перфораторами этого класса. Низкий уровень вибрации (всего 13 м/s²) для не утомительной работы благодаря системе гашения вибрации Vibration Control от Bosch. Сменный патрон для быстрой смены между ударным сверлением в бетоне и сверлением без удара в древесине и металле.">
             </div>
-            <div>
-              <p>22500 Р.</p>
-              <p>15500 Р.</p>
+            <div class="products__price-container">
+              <p class="products__old-price">22500 Р.</p>
+              <p class="products__current-price">15500 Р.</p>
             </div>
           </li>
-          <li>
-            <h3>
-              <a href="#">Перфоратор BOSCH BFG 6000</a>
+          <li class="products__item">
+            <h3 class="products__title">
+              <a class="products__link" href="#">Перфоратор BOSCH BFG 6000</a>
             </h3>
-            <div>
-              <img src="img/perforator-3.jpg" width="145" height="100" alt="Перфоратор BOSCH BFG 6000 - самый быстрый универсальный перфоратор в классе. Разнообразное применение для долбежных и сверлильных работ, а также при выполнении работ с полой сверлильной коронкой. Сверлит на 30% быстрее по сравнению с аналогичными инструментами других производителей. Низкий уровень вибрации для неутомительной работы благодаря системе гашения вибрации Vibration Control от Bosch.">
+            <div class="products__img-container">
+              <img class="products__img" src="img/perforator-3.jpg" width="145" height="100" alt="Перфоратор BOSCH BFG 6000 - самый быстрый универсальный перфоратор в классе. Разнообразное применение для долбежных и сверлильных работ, а также при выполнении работ с полой сверлильной коронкой. Сверлит на 30% быстрее по сравнению с аналогичными инструментами других производителей. Низкий уровень вибрации для неутомительной работы благодаря системе гашения вибрации Vibration Control от Bosch.">
             </div>
-            <div>
-              <p>30500 Р.</p>
-              <p>25500 Р.</p>
+            <div class="products__price-container">
+              <p class="products__old-price">30500 Р.</p>
+              <p class="products__current-price">25500 Р.</p>
             </div>
           </li>
-          <li>
-            <h3>
-              <a href="#">Перфоратор BOSCH BFG 2000</a>
+          <li class="products__item">
+            <h3 class="products__title">
+              <a class="products__link" href="#">Перфоратор BOSCH BFG 2000</a>
             </h3>
-            <div>
-              <p>12500 Р.</p>
+            <div class="products__price-container">
+              <p class="products__current-price">12500 Р.</p>
             </div>
-            <div>
-              <a href="#">Купить</a>
-              <a href="#">В закладки</a>
+            <div class="products__buttons-container">
+              <a class="products__buy-button" href="#">Купить</a>
+              <a class="products__bookmark-button" href="#">В закладки</a>
             </div>
           </li>
-          <li>
-            <h3>
-              <a href="#">Перфоратор BOSCH BFG 3000</a>
+          <li class="products__item">
+            <h3 class="products__title">
+              <a class="products__link" href="#">Перфоратор BOSCH BFG 3000</a>
             </h3>
-            <div>
-              <img src="img/perforator-2.jpg" width="145" height="100" alt="Перфоратор BOSCH BFG 3000 - максимальная производительность при минимуме вибраций. Высокая производительность сверления и увеличение производительности долбления на 20 % по сравнению с другими перфораторами этого класса. Низкий уровень вибрации для не утомительной работы благодаря системе гашения вибрации Vibration Control от Bosch. Сменный патрон для быстрой смены между ударным сверлением в бетоне и сверлением без удара в древесине и металле.">
+            <div class="products__img-container">
+              <img class="products__img" src="img/perforator-2.jpg" width="145" height="100" alt="Перфоратор BOSCH BFG 3000 - максимальная производительность при минимуме вибраций. Высокая производительность сверления и увеличение производительности долбления на 20 % по сравнению с другими перфораторами этого класса. Низкий уровень вибрации для не утомительной работы благодаря системе гашения вибрации Vibration Control от Bosch. Сменный патрон для быстрой смены между ударным сверлением в бетоне и сверлением без удара в древесине и металле.">
             </div>
-            <div>
-              <p>22500 Р.</p>
-              <p>15500 Р.</p>
+            <div class="products__price-container">
+              <p class="products__old-price">22500 Р.</p>
+              <p class="products__current-price">15500 Р.</p>
             </div>
           </li>
-          <li>
-            <h3>
-              <a href="#">Перфоратор BOSCH BFG 6000</a>
+          <li class="products__item">
+            <h3 class="products__title">
+              <a class="products__link" href="#">Перфоратор BOSCH BFG 6000</a>
             </h3>
-            <div>
-              <img src="img/perforator-3.jpg" width="145" height="100" alt="Перфоратор BOSCH BFG 6000 - самый быстрый универсальный перфоратор в классе. Разнообразное применение для долбежных и сверлильных работ, а также при выполнении работ с полой сверлильной коронкой. Сверлит на 30% быстрее по сравнению с аналогичными инструментами других производителей. Низкий уровень вибрации для неутомительной работы благодаря системе гашения вибрации Vibration Control от Bosch.">
+            <div class="products__img-container">
+              <img class="products__img" src="img/perforator-3.jpg" width="145" height="100" alt="Перфоратор BOSCH BFG 6000 - самый быстрый универсальный перфоратор в классе. Разнообразное применение для долбежных и сверлильных работ, а также при выполнении работ с полой сверлильной коронкой. Сверлит на 30% быстрее по сравнению с аналогичными инструментами других производителей. Низкий уровень вибрации для неутомительной работы благодаря системе гашения вибрации Vibration Control от Bosch.">
             </div>
-            <div>
-              <p>30500 Р.</p>
-              <p>25500 Р.</p>
+            <div class="products__price-container">
+              <p class="products__old-price">30500 Р.</p>
+              <p class="products__current-price">25500 Р.</p>
             </div>
           </li>
-          <li>
-            <h3>
-              <a href="#">Перфоратор BOSCH BFG 2000</a>
+          <li class="products__item">
+            <h3 class="products__title">
+              <a class="products__link" href="#">Перфоратор BOSCH BFG 2000</a>
             </h3>
-            <div>
-              <img src="img/perforator-2.jpg" width="145" height="100" alt="Перфоратор BOSCH BFG 2000 - имеет два режима работы - сверление с ударом и чистый удар. Выбор между ними осуществляется посредством тумблера. Благодаря патрону SDS-max, можно устанавливать профессиональную оснастку, а также быстро менять её в процессе работы. Дополнительная рукоять помогает прочно держать инструмент в руках, что особенно актуально для работы в режиме долбления.">
+            <div class="products__img-container">
+              <img class="products__img" src="img/perforator-2.jpg" width="145" height="100" alt="Перфоратор BOSCH BFG 2000 - имеет два режима работы - сверление с ударом и чистый удар. Выбор между ними осуществляется посредством тумблера. Благодаря патрону SDS-max, можно устанавливать профессиональную оснастку, а также быстро менять её в процессе работы. Дополнительная рукоять помогает прочно держать инструмент в руках, что особенно актуально для работы в режиме долбления.">
             </div>
-            <div>
-              <p>12500 Р.</p>
+            <div class="products__price-container">
+              <p class="products__current-price">12500 Р.</p>
             </div>
           </li>
-          <li>
-            <h3>
-              <a href="#">Перфоратор BOSCH BFG 3000</a>
+          <li class="products__item">
+            <h3 class="products__title">
+              <a class="products__link" href="#">Перфоратор BOSCH BFG 3000</a>
             </h3>
-            <div>
-              <img src="img/perforator-2.jpg" width="145" height="100" alt="Перфоратор BOSCH BFG 3000 - максимальная производительность при минимуме вибраций. Высокая производительность сверления и увеличение производительности долбления на 20 % по сравнению с другими перфораторами этого класса. Низкий уровень вибрации для не утомительной работы благодаря системе гашения вибрации Vibration Control от Bosch. Сменный патрон для быстрой смены между ударным сверлением в бетоне и сверлением без удара в древесине и металле.">
+            <div class="products__img-container">
+              <img class="products__img" src="img/perforator-2.jpg" width="145" height="100" alt="Перфоратор BOSCH BFG 3000 - максимальная производительность при минимуме вибраций. Высокая производительность сверления и увеличение производительности долбления на 20 % по сравнению с другими перфораторами этого класса. Низкий уровень вибрации для не утомительной работы благодаря системе гашения вибрации Vibration Control от Bosch. Сменный патрон для быстрой смены между ударным сверлением в бетоне и сверлением без удара в древесине и металле.">
             </div>
-            <div>
-              <p>22500 Р.</p>
-              <p>15500 Р.</p>
+            <div class="products__price-container">
+              <p class="products__old-price">22500 Р.</p>
+              <p class="products__current-price">15500 Р.</p>
             </div>
           </li>
-          <li>
-            <h3>
-              <a href="#">Перфоратор BOSCH BFG 6000</a>
+          <li class="products__item">
+            <h3 class="products__title">
+              <a class="products__link" href="#">Перфоратор BOSCH BFG 6000</a>
             </h3>
-            <div>
-              <img src="img/perforator-3.jpg" width="145" height="100" alt="Перфоратор BOSCH BFG 6000 - самый быстрый универсальный перфоратор в классе. Разнообразное применение для долбежных и сверлильных работ, а также при выполнении работ с полой сверлильной коронкой. Сверлит на 30% быстрее по сравнению с аналогичными инструментами других производителей. Низкий уровень вибрации для неутомительной работы благодаря системе гашения вибрации Vibration Control от Bosch.">
+            <div class="products__img-container">
+              <img class="products__img" src="img/perforator-3.jpg" width="145" height="100" alt="Перфоратор BOSCH BFG 6000 - самый быстрый универсальный перфоратор в классе. Разнообразное применение для долбежных и сверлильных работ, а также при выполнении работ с полой сверлильной коронкой. Сверлит на 30% быстрее по сравнению с аналогичными инструментами других производителей. Низкий уровень вибрации для неутомительной работы благодаря системе гашения вибрации Vibration Control от Bosch.">
             </div>
-            <div>
-              <p>30500 Р.</p>
-              <p>25500 Р.</p>
+            <div class="products__price-container">
+              <p class="products__old-price">30500 Р.</p>
+              <p class="products__current-price">25500 Р.</p>
             </div>
           </li>
-          <li>
-            <h3>
-              <a href="#">Перфоратор BOSCH BFG 2000</a>
+          <li class="products__item">
+            <h3 class="products__title">
+              <a class="products__link" href="#">Перфоратор BOSCH BFG 2000</a>
             </h3>
-            <div>
-              <img src="img/perforator-2.jpg" width="145" height="100" alt="Перфоратор BOSCH BFG 2000 - имеет два режима работы - сверление с ударом и чистый удар. Выбор между ними осуществляется посредством тумблера. Благодаря патрону SDS-max, можно устанавливать профессиональную оснастку, а также быстро менять её в процессе работы. Дополнительная рукоять помогает прочно держать инструмент в руках, что особенно актуально для работы в режиме долбления.">
+            <div class="products__img-container">
+              <img class="products__img" src="img/perforator-2.jpg" width="145" height="100" alt="Перфоратор BOSCH BFG 2000 - имеет два режима работы - сверление с ударом и чистый удар. Выбор между ними осуществляется посредством тумблера. Благодаря патрону SDS-max, можно устанавливать профессиональную оснастку, а также быстро менять её в процессе работы. Дополнительная рукоять помогает прочно держать инструмент в руках, что особенно актуально для работы в режиме долбления.">
             </div>
-            <div>
-              <p>12500 Р.</p>
+            <div class="products__price-container">
+              <p class="products__current-price">12500 Р.</p>
             </div>
           </li>
         </ul>
+
+        <!-- Красная зона -->
 
         <ol aria-label="Переход на другую страницу">
           <li>
@@ -361,6 +373,8 @@
         </p>
 
       </section>
+
+    <!-- Конец красной зоны -->
 
     </main>
 
