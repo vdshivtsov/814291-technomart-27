@@ -21,18 +21,18 @@
         </form>
 
         <ul class="header__goods-actions goods-actions">
-          <li class="goods-actions__item goods-actions__item_bookmarks">
-            <a href="#">
+          <li class="goods-actions__item">
+            <a class="goods-actions__link goods-actions__link_bookmarks" href="#">
               Закладки: <span>0</span>
             </a>
           </li>
-          <li class="goods-actions__item goods-actions__item_cart">
-            <a href="#">
+          <li class="goods-actions__item">
+            <a class="goods-actions__link goods-actions__link_cart" href="#">
               Корзина: <span>0</span>
             </a>
           </li>
-          <li class="goods-actions__item goods-actions__item_checkout">
-            <a href="#">Оформить заказ</a>
+          <li class="goods-actions__item">
+            <a class="goods-actions__link goods-actions__link_checkout" href="#">Оформить заказ</a>
           </li>
         </ul>
       </div>
@@ -55,7 +55,7 @@
 
         <section class="header__authorization authorization">
           <h2 class="visually-hidden">Авторизация</h2>
-          <div class="">
+          <div class="authorization__container_buttons">
             <a class="authorization__button authorization__button_sign-in" href="#">Войти</a>
             <a class="authorization__button authorization__button_sign-up" href="#">Регистрация</a>
           </div>
@@ -63,28 +63,28 @@
         </section>
       </div>
 
-      <nav class="header__navigation">
-        <ul>
-          <li>
-            <a>Главная</a>
+      <nav class="header__navigation navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link">Главная</a>
           </li>
           <li>
-            <a href="#">Компания</a>
+            <a class="navigation__link" href="#">Компания</a>
           </li>
           <li>
-            <a href="catalog.html">Каталог</a>
+            <a class="navigation__link" href="catalog.html">Каталог</a>
           </li>
           <li>
-            <a href="#">Новости</a>
+            <a class="navigation__link" href="#">Новости</a>
           </li>
           <li>
-            <a href="#">Спецпредложения</a>
+            <a class="navigation__link" href="#">Спецпредложения</a>
           </li>
           <li>
-            <a href="#">Доставка</a>
+            <a class="navigation__link" href="#">Доставка</a>
           </li>
           <li>
-            <a href="#">Контакты</a>
+            <a class="navigation__link" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -92,7 +92,7 @@
 
     <!-- Начало красной зоны -->
 
-    <main>
+    <main class="main main_index">
       <h1 class="visually-hidden">Магазин Техномарт</h1>
 
       <section>
@@ -299,30 +299,30 @@
       <section class="about-company">
         <h2 class="about-company__title">Компания «Техномарт»</h2>
 
-        <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-        <p>Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
+        <p class="about-company__content">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+        <p class="about-company__content">Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
 
-        <ul>
-          <li>Деловые линии</li>
-          <li>Автотрейдинг</li>
-          <li>ЖелДорЭкспедиция</li>
+        <ul class="about-company__delivery-list">
+          <li class="about-company__delivery-item">Деловые линии</li>
+          <li class="about-company__delivery-item">Автотрейдинг</li>
+          <li class="about-company__delivery-item">ЖелДорЭкспедиция</li>
         </ul>
 
-        <a class="button" href="#">Подробнее о компании</a>
+        <a class="about-company__company-details button" href="#">Подробнее о компании</a>
       </section>
 
       <section class="contacts">
         <h2 class="contacts__title">Контакты</h2>
 
-        <p>Вы можете забрать товар сами, заехав в наш офис:</p>
+        <p class="contacts__content">Вы можете забрать товар сами, заехав в наш офис:</p>
 
-        <div>
-          <a href="https://2gis.ru/spb/geo/5348660212677875">
-            <img src="img/contacts-map.png" width="300" height="158" alt="Расположение офиса на карте">
+        <div class="contacts__img-container">
+          <a class="contacts__img-link" href="https://2gis.ru/spb/geo/5348660212677875">
+            <img class="contacts__img" src="img/contacts-map.png" width="300" height="158" alt="Расположение офиса на карте">
           </a>
         </div>
 
-        <a class="button" href="#">Заблудились? Напишите нам!</a>
+        <a class="contacts__write-us button" href="#">Заблудились? Напишите нам!</a>
       </section>
     </main>
 
@@ -331,15 +331,15 @@
       <div class="footer__logo our-logo">
         <img src="img/logo.svg" width="138" height="23" alt="Логотип компании Техномарт">
       </div>
-      <p>
+      <p class="footer__contacts">
         <span class="visually-hidden">Наш адрес:</span>
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
         <span class="visually-hidden">Наш телефон:</span>
           +7 (812) 555-05-55
       </p>
-      <ul class="footer__site-map">
+      <ul class="footer__list footer__list_site-map">
         <li>
-          <a href="#">Компания</a>
+          <a  href="#">Компания</a>
         </li>
         <li>
           <a href="#">Новости</a>
@@ -355,7 +355,7 @@
         </li>
       </ul>
 
-      <ul class="footer__catalog-map">
+      <ul class="footer__list footer__list_catalog-map">
         <li>
           <a href="#">Материалы</a>
         </li>

@@ -172,6 +172,15 @@
 
 body {
   margin: 0;
+
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.2;
+  text-align: left;
+  color: #ffffff;
+
+  background-color: rgba(255,255,255,1);
 }
 
 img {
@@ -180,18 +189,6 @@ img {
 
 a {
   text-decoration: none;
-}
-
-.feedback {
-  color: black;
-}
-
-.feedback ul {
-  list-style: none;
-}
-
-.feedback p {
-  margin-bottom: 0;
 }
 
 html {
@@ -225,42 +222,26 @@ html {
 /*Mix properties*/
 
 .button {
-  font-size: 14px;
-  line-height: 18px;
-  font-family: "Cuprum", "Arial", sans-serif;
   text-align: center;
-  color: rgba(255,255,255,1);
   text-transform: uppercase;
-
-  background-color: rgba(238,54,67,1);
-}
-
-.button:hover,
-.button:focus {
-  background-color: rgba(202,44,55,1);
-}
-
-.button:active {
-  background-color: rgba(186,39,50,1);
 }
 
 .our-logo {
   background-color: rgba(238,54,67,1);
   box-shadow: inset 0 -5px 0 0 rgba(0,0,0,0.24);
+  text-align: center;
 }
 
 /*Local properties*/
 
 .header {
-  font-weight: normal;
-  font-family: "Cuprum", "Arial", sans-serif;
-  color: rgba(255,255,255,1);
-
   background-color: rgba(244,247,249,1);
 }
 
 .header__top {
   background-color: rgba(41,52,73,1);
+  font-size: 17px;
+  line-height: 18px;
 }
 
 
@@ -274,12 +255,13 @@ html {
 }
 
 .search-form__input {
-  font-size: 17px;
-  line-height: 18px;
-  color: rgba(255,255,255,1);
-
   background-color: rgba(41,52,73,1);
   border: none;
+  color: rgba(255,255,255,1);
+}
+
+.search-form__input:focus {
+  color: rgba(0,0,0,1);
 }
 
 .search-form__input::placeholder {
@@ -287,8 +269,6 @@ html {
 }
 
 .search-form__input:focus {
-  color: rgba(0,0,0,1);
-
   background-color: rgba(255,255,255,1);
 }
 
@@ -296,37 +276,34 @@ html {
   list-style: none;
 }
 
-.goods-actions__item a {
-  font-size: 17px;
-  line-height: 18px;
-  text-align: center;
+.goods-actions__link {
   color: rgba(255,255,255,1);
 }
 
-.goods-actions__item a:active {
+.goods-actions__link:active {
   color: rgba(255,255,255,0.6);
 }
 
-.goods-actions__item_unempty a {
+.goods-actions__link_not-empty {
   background-color: rgba(238,54,67,1);
 }
 
 /*Слудующего свойства нет в стайлгайде, прикрутил эффект как у .button*/
-.goods-actions__item_unempty a:hover,
-.goods-actions__item_unempty a:focus {
+.goods-actions__link_not-empty:hover,
+.goods-actions__link_not-empty:focus {
   background-color: rgba(202,44,55,1);
 }
 
-.goods-actions__item_checkout a {
+.goods-actions__link_checkout {
   background-color: rgba(99,166,62,1);
 }
 
-.goods-actions__item_checkout a:hover,
-.goods-actions__item_checkout a:focus {
+.goods-actions__link_checkout:hover,
+.goods-actions__link_checkout:focus {
   background-color: rgba(95,187,45,1);
 }
 
-.goods-actions__item_checkout a:active {
+.goods-actions__link_checkout:active {
   color: rgba(255,255,255,0.5);
 
   background-color: rgba(81,133,52,1);
@@ -336,7 +313,6 @@ html {
   font-style: italic;
   font-size: 16px;
   line-height: 23px;
-  text-align: left;
   color: rgba(238,54,67,1);
 }
 
@@ -358,16 +334,19 @@ html {
   color: rgba(50,66,92,1);
 }
 
-.authorization__container {
-  background-color: rgba(255,255,255,1);
+.authorization {
+  text-align: right;
+}
+
+.authorization__container_buttons {
+  font-size: 21px;
+  line-height: 21px;
+  color: rgba(0,0,0,1);
 }
 
 .authorization__button {
-  font-size: 21px;
-  line-height: 21px;
+  color: inherit;
   text-align: center;
-  color: rgba(0,0,0,1);
-
   background-color: rgba(255,255,255,1);
 }
 
@@ -380,13 +359,17 @@ html {
   color: rgba(0,0,0,0.3);
 }
 
-.authorization__name {
+.authorization__container_name {
+  background-color: rgba(255,255,255,1);
   font-size: 21px;
   line-height: 21px;
   text-align: left;
   color: rgba(0,0,0,1);
+}
 
+.authorization__name {
   background-color: transparent;
+  color: inherit;
 }
 
 .authorization__name:active {
@@ -405,10 +388,16 @@ html {
   color: rgba(197,197,197,1);
 }
 
-.authorization__personal {
+.authorization__container_personal {
+  background-color: transparent;
   font-size: 16px;
+  line-height: 18px;
   text-align: left;
   color: rgba(50,66,92,1);
+}
+
+.authorization__personal {
+  color: inherit;
   text-decoration: underline;
 }
 
@@ -421,25 +410,26 @@ html {
   color: rgba(50,66,92,0.3);
 }
 
-.header__navigation {
+.navigation {
   background-color: rgba(50,66,92,1);
   box-shadow: inset 0 -5px 0 0 rgba(41,52,73,1);
 }
 
-.header__navigation ul {
+.navigation__list {
   list-style: none;
-}
-
-.header__navigation a {
   text-align: center;
   color: rgba(255,255,255,1);
 }
 
-.header__navigation a:hover {
+.navigation__link {
+  color: inherit;
+}
+
+.navigation__link:hover {
   background-color: rgba(29,39,57,1);
 }
 
-.header__navigation a:active {
+.navigation__link:active {
   color: rgba(255,255,255,0.5);
 
   background-color: rgba(29,39,57,1);
@@ -452,163 +442,83 @@ html {
 .about-company {
   color: rgba(0,0,0,1);
 
-  background-color: rgba(255,255,255,1);
+  background-color: transparent;
 }
 
 .about-company__title {
   font-weight: normal;
   font-size: 30px;
   line-height: 30px;
-  font-family: "Cuprum", "Arial", sans-serif;
-  text-align: left;
   text-transform: uppercase;
 }
 
-.about-company p {
+.about-company__content {
   font-size: 13px;
   line-height: 24px;
   font-family: "PTSans", "Arial", sans-serif;
-  text-align: left;
 }
 
-.about-company ul {
+.about-company__delivery-list {
   list-style: none;
 }
 
-.about-company li {
+.about-company__delivery-item {
   font-size: 18px;
   line-height: 20px;
-  font-family: "Cuprum", "Arial", sans-serif;
-  text-align: left;
+}
+
+.about-company__company-details,
+.contacts__write-us {
+  background-color: rgba(238,54,67,1);
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(255,255,255,1);
+}
+
+.about-company__company-details:hover,
+.about-company__company-details:focus,
+.contacts__write-us:hover,
+.contacts__write-us:focus {
+  background-color: rgba(202,44,55,1);
+}
+
+.about-company__company-details:active,
+.contacts__write-us:active, {
+  background-color: rgba(186,39,50,1);
 }
 
 .contacts {
   color: rgba(0,0,0,1);
 
-  background-color: rgba(255,255,255,1);
+  text-align: center;
+
+  background-color: transparent;
 }
 
 .contacts__title {
   font-weight: normal;
   font-size: 30px;
   line-height: 30px;
-  font-family: "Cuprum", "Arial", sans-serif;
-  text-align: left;
   text-transform: uppercase;
+  text-align: left;
 }
 
-.about-company p {
+.contacts__content {
   font-size: 13px;
   line-height: 24px;
   font-family: "PTSans", "Arial", sans-serif;
   text-align: left;
 }
 
-.footer {
-  font-size: 18px;
-  line-height: 24px;
-  font-family: "Cuprum", "Arial", sans-serif;
-  color: rgba(243,247,249,1);
-
-  background-color: rgba(50,66,92,1);
-}
-
-.footer__logo {
-  text-align: center;
-}
-
-.footer p {
-  font-size: 18px;
-  line-height: 24px;
-  text-align: left;
-}
-
-.footer ul {
-  list-style: none;
-}
-
-.footer__site-map a {
-  text-align: left;
-  color: rgba(243,247,249,1);
-}
-
-.footer__site-map a:hover,
-.footer__site-map a:focus {
-  text-decoration: underline;
-}
-
-.footer__site-map a:active {
-  color: rgba(241,245,247,0.5);
-  text-decoration: none;
-}
-
-.footer__catalog-map a {
-  text-align: left;
-  color: rgba(255,209,128,1);
-}
-
-.footer__catalog-map a:hover,
-.footer__catalog-map a:focus {
-  text-decoration: underline;
-}
-
-.footer__catalog-map a:active {
-  color: rgba(255,209,128,0.5);
-  text-decoration: none;
-}
-
-.footer__container {
-  color: white;
-
-  background-color: rgba(41,52,73,1);
-}
-
-.footer__copyright {
-  font-size: 16px;
-  line-height: 18px;
-  text-align: left;
-}
-
-.footer__social a {
-  text-align: center;
-  color: rgba(255,255,255,1);
-
-  background-color: rgba(33,42,58,1);
-}
-
-.footer__social a:hover,
-.footer__social a:focus,
-.footer__social a:active {
-  background-color: rgba(238,54,67,1);
-}
-
-.footer__callback a,
-.footer__develop a {
-  font-size: 16px;
-  line-height: 18px;
-  text-align: left;
-  color: rgba(255,209,128,1);
-}
-
-.footer__callback a:hover,
-.footer__callback a:focus,
-.footer__develop a:hover,
-.footer__develop a:focus {
-  text-decoration: underline;
-}
-
-.footer__callback a:active,
-.footer__develop a:active {
-  color: rgba(238,54,67,1);
-  text-decoration: none;
-}
+/*===*/
 
 .main {
-  background-color: rgba(255,255,255,1);
+  background-color: transparent;
 }
 
-.main__breadcrumbs {
-  list-style: none;
+.main_catalog {
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: rgba(0,0,0,1);
 }
 
 .main__title {
@@ -616,112 +526,74 @@ html {
   font-size: 30px;
   line-height: 30px;
   font-family: "Cuprum", "Arial", sans-serif;
-  text-align: left;
   color: rgba(50,66,92,1);
   text-transform: uppercase;
 
   background-color: rgba(242,246,248,1);
 }
 
-.main__breadcrumbs a {
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs__link {
   font-size: 13px;
   line-height: 18px;
-  font-family: "PT Sans", "Arial", sans-serif;
-  text-align: left;
-  color: rgba(0,0,0,1);
+  color: inherit;
 }
 
-
-.manufact-set {
+.filter__set {
   border: none;
 }
-.manufact-set__title {
+
+.filter__legend {
   font-weight: bold;
   font-size: 17px;
   line-height: 30px;
-  font-family: "PT Sans", "Arial", sans-serif;
-  text-align: left;
-  color: rgba(0,0,0,1);
   text-transform: uppercase;
 }
 
-.manufact-set__list {
+.filter__list {
   list-style: none;
 }
 
 /*ниже задаю параметры только тексту (как по заданию) так как чекбоксы мы потом стилизуем отдельно*/
-.manufact-set__label,
-.manufact-set__label:hover,
-.manufact-set__label:focus,
-.manufact-set__label:active {
+.filter__label,
+.filter__label:hover,
+.filter__label:focus,
+.filter__label:active {
   font-size: 15px;
   line-height: 20px;
-  font-family: "PT Sans", "Arial", sans-serif;
-  text-align: left;
-  color: rgba(0,0,0,1);
   text-transform: uppercase;
 }
 
-.manufact-set__item_disabled {
-  opacity: 0.4;
-}
-
-.power-set {
-  border: none;
-}
-.power-set__title {
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 30px;
-  font-family: "PT Sans", "Arial", sans-serif;
-  text-align: left;
-  color: rgba(0,0,0,1);
-  text-transform: uppercase;
-}
-
-.power-set__list {
-  list-style: none;
-}
-
-/*ниже задаю параметры только тексту (как по заданию) так как чекбоксы мы потом стилизуем отдельно*/
-.power-set__label,
-.power-set__label:hover,
-.power-set__label:focus,
-.power-set__label:active {
-  font-size: 15px;
-  line-height: 20px;
-  font-family: "PT Sans", "Arial", sans-serif;
-  text-align: left;
-  color: rgba(0,0,0,1);
-  text-transform: uppercase;
-}
-
+.manufact-set__item_disabled,
 .power-set__item_disabled {
   opacity: 0.4;
 }
 
-.filtres__button {
+.filter__button {
   font-size: 13px;
-  line-height: 18px;
-  font-family: "PT Sans", "Arial", sans-serif;
-  text-align: center;
   color: rgba(0,0,0,1);
-  text-transform: uppercase;
 
-  background-color: rgba(255,255,255,1);
+  background-color: transparent;
   border: solid 1px rgba(229,229,229,1);
 }
 
-.filtres__button:hover,
-.filtres__button:focus {
+.filter__button:hover,
+.filter__button:focus {
   border: solid 1px rgba(189,198,202,1);
 }
 
-.filtres__button:active {
+.filter__button:active {
   border: solid 1px rgba(238,54,67,1);
 }
 
 /*Ниже обращаюсь через .products так как этот список товаров еще будет на главной странице*/
+
+.goods {
+  text-align: center;
+}
 
 .products {
   list-style: none;
@@ -738,53 +610,41 @@ html {
 }
 
 .products__title {
-  text-align: center;
-}
-
-.products__img-container {
-  text-align: center;
+  font-size: 18px;
+  line-height: 20px;
 }
 
 .products__link {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 20px;
-  font-family: "PT Sans", "Arial", sans-serif;
-  color: rgba(0,0,0,1);
+  color: inherit;
 }
 
 .products__price-container {
   background-color: transparent;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
 }
 
 .products__old-price {
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 18px;
-  font-family: "PT Sans", "Arial", sans-serif;
-  text-align: center;
   color: rgba(153,153,153,1);
   text-decoration: line-through;
 }
 
 .products__current-price {
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 18px;
-  font-family: "PT Sans", "Arial", sans-serif;
-  text-align: center;
   color: rgba(255,255,255,1);
 
   background-color: rgba(238,54,67,1);
 }
 
-.products__buy-button {
+.products__buttons-container {
   font-size: 14px;
   line-height: 18px;
-  font-family: "Cuprum", "Arial", sans-serif;
-  text-align: center;
-  color: rgba(255,255,255,1);
   text-transform: uppercase;
+  font-family: "Cuprum", "Arial", sans-serif;
+}
+
+.products__buy-button {
+  color: rgba(255,255,255,1);
 
   background-color: rgba(99,166,62,1);
   box-shadow: inset 0 -3px 0 0 rgba(54,115,21,1);
@@ -800,13 +660,8 @@ html {
 }
 
 .products__bookmark-button {
-  font-size: 14px;
-  line-height: 18px;
-  font-family: "Cuprum", "Arial", sans-serif;
-  text-align: center;
   color: rgba(50,66,92,1);
-  text-transform: uppercase;
-
+  background-color: transparent;
   border: solid 3px rgba(99,166,62,1);
 }
 
@@ -819,4 +674,86 @@ html {
   color: rgba(50,66,92,0.298);
 
   border: solid 3px rgba(50,66,92,0.3);
+}
+
+
+/*===*/
+
+.footer {
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Cuprum", "Arial", sans-serif;
+
+  background-color: rgba(50,66,92,1);
+}
+
+.footer__list {
+  list-style: none;
+}
+
+.footer__list_site-map a {
+  color: rgba(243,247,249,1);
+}
+
+.footer__list_site-map a:hover,
+.footer__site-map a:focus {
+  text-decoration: underline;
+}
+
+.footer__list_site-map a:active {
+  color: rgba(241,245,247,0.5);
+  text-decoration: none;
+}
+
+.footer__list_catalog-map a {
+  color: rgba(255,209,128,1);
+}
+
+.footer__list_catalog-map a:hover,
+.footer__list_catalog-map a:focus {
+  text-decoration: underline;
+}
+
+.footer__list_catalog-map a:active {
+  color: rgba(255,209,128,0.5);
+  text-decoration: none;
+}
+
+.footer__container {
+  color: rgba(255,255,255,1);
+  font-size: 16px;
+  line-height: 18px;
+
+  background-color: rgba(41,52,73,1);
+}
+
+.footer__social a {
+  text-align: center;
+  color: inherit;
+
+  background-color: rgba(33,42,58,1);
+}
+
+.footer__social a:hover,
+.footer__social a:focus,
+.footer__social a:active {
+  background-color: rgba(238,54,67,1);
+}
+
+.footer__callback a,
+.footer__develop a {
+  color: rgba(255,209,128,1);
+}
+
+.footer__callback a:hover,
+.footer__callback a:focus,
+.footer__develop a:hover,
+.footer__develop a:focus {
+  text-decoration: underline;
+}
+
+.footer__callback a:active,
+.footer__develop a:active {
+  color: rgba(238,54,67,1);
+  text-decoration: none;
 }
