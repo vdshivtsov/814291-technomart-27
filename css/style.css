@@ -226,10 +226,36 @@ html {
   text-transform: uppercase;
 }
 
+.button_red {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  background-color: rgba(238,54,67,1);
+  color: rgba(255, 255, 255, 1);
+}
+
+.button_red:hover {
+  background-color: rgba(202, 44, 55, 1);
+}
+
+.button_red:focus {
+  background-color: rgba(186, 39, 50, 1);
+}
+
 .our-logo {
   background-color: rgba(238,54,67,1);
   box-shadow: inset 0 -5px 0 0 rgba(0,0,0,0.24);
   text-align: center;
+}
+
+.section-title {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 30px;
+  text-align: left;
+  text-transform: uppercase;
 }
 
 /*Local properties*/
@@ -437,19 +463,95 @@ html {
 
 /*Красная зона*/
 
+.rubrics__list {
+  list-style: none;
+}
+
+.rubrics__ilem_matherials {
+  background-color: rgba(255, 191, 71, 1);
+}
+
+.rubrics__ilem_instrument {
+  background-color: rgba(59, 188, 227, 1);
+}
+
+.rubrics__ilem_technics {
+  background-color: rgba(220, 145, 216, 1);
+}
+
+.rubrics__ilem_discount {
+  background-color: rgba(142, 215, 143, 1);
+}
+
+.rubrics__ilem_delivery {
+  background-color: rgba(255, 192, 71, 1);
+}
+
+.rubrics__title {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.rubrics__link {
+  font-size: 14px;
+  line-height: 18px;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+}
+
+.rubrics__link:hover,
+.rubrics__link:focus {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.rubrics__link:active {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.slider-category {
+  list-style: none;
+}
+
+.slider-category__item {
+  background-color: rgba(41, 52, 73, 1);
+}
+
+.slider-category__item_drills {
+  background-image: url("../img/slider-1.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 620px 266px;
+}
+
+.slider-category__item_perforator {
+  background-image: url("../img/slider-2.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 620px 266px;
+}
+
+.slider-category__title {
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.slider-category__content {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.popular-goods__title {
+  color: rgba(50, 66, 92, 1);
+}
+
 /*Конец красной зоны*/
 
 .about-company {
   color: rgba(0,0,0,1);
 
   background-color: transparent;
-}
-
-.about-company__title {
-  font-weight: normal;
-  font-size: 30px;
-  line-height: 30px;
-  text-transform: uppercase;
 }
 
 .about-company__content {
@@ -467,40 +569,12 @@ html {
   line-height: 20px;
 }
 
-.about-company__company-details,
-.contacts__write-us {
-  background-color: rgba(238,54,67,1);
-  font-size: 14px;
-  line-height: 18px;
-  color: rgba(255,255,255,1);
-}
-
-.about-company__company-details:hover,
-.about-company__company-details:focus,
-.contacts__write-us:hover,
-.contacts__write-us:focus {
-  background-color: rgba(202,44,55,1);
-}
-
-.about-company__company-details:active,
-.contacts__write-us:active, {
-  background-color: rgba(186,39,50,1);
-}
-
 .contacts {
   color: rgba(0,0,0,1);
 
   text-align: center;
 
   background-color: transparent;
-}
-
-.contacts__title {
-  font-weight: normal;
-  font-size: 30px;
-  line-height: 30px;
-  text-transform: uppercase;
-  text-align: left;
 }
 
 .contacts__content {
@@ -596,7 +670,10 @@ html {
 }
 
 .products {
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: rgba(0, 0, 0, 1);
   list-style: none;
+  text-align: center;
 }
 
 .products__item {

@@ -95,42 +95,42 @@
     <main class="main main_index">
       <h1 class="visually-hidden">Магазин Техномарт</h1>
 
-      <section>
+      <section class="main__rubrics rubrics">
         <h2 class="visually-hidden">Рубрики</h2>
 
-        <ul aria-label="Выбор рубрики">
-          <li>
-            <h3>Материалы</h3>
-            <a href="#">На любой вкус</a>
+        <ul class="rubrics__list" aria-label="Выбор рубрики">
+          <li class="rubrics__ilem rubrics__ilem_matherials">
+            <h3 class="rubrics__title">Материалы</h3>
+            <a class="rubrics__link" href="#">На любой вкус</a>
           </li>
-          <li>
-            <h3>Инструмент</h3>
-            <a href="#">На все случаи</a>
+          <li class="rubrics__ilem rubrics__ilem_instrument">
+            <h3 class="rubrics__title">Инструмент</h3>
+            <a class="rubrics__link" href="#">На все случаи</a>
           </li>
-          <li>
-            <h3>Техника</h3>
-            <a href="#">Для стройки</a>
+          <li class="rubrics__ilem rubrics__ilem_technics">
+            <h3 class="rubrics__title">Техника</h3>
+            <a class="rubrics__link" href="#">Для стройки</a>
           </li>
-          <li>
-            <h3>Скидки 50%</h3>
-            <a href="#">На 350 товаров</a>
+          <li class="rubrics__ilem rubrics__ilem_discount">
+            <h3 class="rubrics__title">Скидки 50%</h3>
+            <a class="rubrics__link" href="#">На 350 товаров</a>
           </li>
-          <li>
-            <h3>Доставка</h3>
-            <a href="#">Бесплатно</a>
+          <li class="rubrics__ilem rubrics__ilem_delivery">
+            <h3 class="rubrics__title">Доставка</h3>
+            <a class="rubrics__link" href="#">Бесплатно</a>
           </li>
           <li>
             <!-- По-моему, дрели и перфораторы тоже относятся к рубрике, поэтому включил слайдер в один ul с остальным. Пока разметил так. Картинка, по-моему, не контекстная -->
-            <ul aria-label="Выбор категории товара">
-              <li>
-                <h3>Дрели</h3>
-                <p>Соседям на радость!</p>
-                <a href="catalog.html">Открыть каталог</a>
+            <ul class="rubrics__categories slider-category" aria-label="Выбор категории товара">
+              <li class="slider-category__item slider-category__item_drills">
+                <h3 class="slider-category__title">Дрели</h3>
+                <p class="slider-category__content">Соседям на радость!</p>
+                <a class="slider-category__link button button_red" href="catalog.html">Открыть каталог</a>
               </li>
-              <li>
-                <h3>Перфораторы</h3>
-                <p>Настоящие мужские игрушки</p>
-                <a href="catalog.html">Открыть каталог</a>
+              <li class="slider-category__item slider-category__item_perforator">
+                <h3 class="slider-category__title">Перфораторы</h3>
+                <p class="slider-category__content">Настоящие мужские игрушки</p>
+                <a class="slider-category__link button button_red" href="catalog.html">Открыть каталог</a>
               </li>
             </ul>
           </li>
@@ -138,58 +138,58 @@
 
       </section>
 
-      <section>
-        <div>
-          <h2>Популярные товары</h2>
-          <a href="#">Все популярные товары</a>
+      <section class="popular-goods">
+        <div class="popular-goods__container">
+          <h2 class="popular-goods__title section-title">Популярные товары</h2>
+          <a class="popular-goods__link button button_red" href="#">Все популярные товары</a>
         </div>
 
-        <ul aria-label="Одни из самых популярных предложений в нашем каталоге">
-          <li>
-            <h3>
-              <a href="#">Перфоратор BOSCH BFG 9000</a>
+        <ul class="popular-goods__list products" aria-label="Одни из самых популярных предложений в нашем каталоге">
+          <li class="products__item">
+            <h3 class="products__title">
+              <a class="products__link" href="#">Перфоратор BOSCH BFG 9000</a>
             </h3>
-            <div>
-              <img src="img/perforator-1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000 - производитель инструмента Bosch создал эту модель для использования как в быту, так и на производстве. Перфоратор предназначен для создания отверстий в металле, в дереве и других твердых материалах. В режиме «сверление с ударом» или «долбление» инструмент способен продолбить отверстие в бетоне, кирпиче, керамике. А если переключиться в режим «завинчивание» инструмент превращается в обычный шуруповерт, которым можно вкручивать саморезы.">
+            <div clas="products__img-container">
+              <img class="products__img" src="img/perforator-1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000 - производитель инструмента Bosch создал эту модель для использования как в быту, так и на производстве. Перфоратор предназначен для создания отверстий в металле, в дереве и других твердых материалах. В режиме «сверление с ударом» или «долбление» инструмент способен продолбить отверстие в бетоне, кирпиче, керамике. А если переключиться в режим «завинчивание» инструмент превращается в обычный шуруповерт, которым можно вкручивать саморезы.">
             </div>
-            <div>
-              <p>32500 Р.</p>
-              <p>25500 Р.</p>
+            <div class="products__price-container">
+              <p class="products__old-price">32500 Р.</p>
+              <p class="products__current-price">25500 Р.</p>
             </div>
           </li>
-          <li>
-            <h3>
-              <a href="#">Перфоратор BOSCH BFG 3000</a>
+          <li class="products__item">
+            <h3 class="products__title">
+              <a class="products__link" href="#">Перфоратор BOSCH BFG 3000</a>
             </h3>
-            <div>
-              <img src="img/perforator-2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000 - максимальная производительность при минимуме вибраций. Высокая производительность сверления и увеличение производительности долбления на 20 % по сравнению с другими перфораторами этого класса. Низкий уровень вибрации для не утомительной работы благодаря системе гашения вибрации Vibration Control от Bosch. Сменный патрон для быстрой смены между ударным сверлением в бетоне и сверлением без удара в древесине и металле.">
+            <div class="products__img-container">
+              <img class="products__img" src="img/perforator-2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000 - максимальная производительность при минимуме вибраций. Высокая производительность сверления и увеличение производительности долбления на 20 % по сравнению с другими перфораторами этого класса. Низкий уровень вибрации для не утомительной работы благодаря системе гашения вибрации Vibration Control от Bosch. Сменный патрон для быстрой смены между ударным сверлением в бетоне и сверлением без удара в древесине и металле.">
             </div>
-            <div>
-              <p>22500 Р.</p>
-              <p>15500 Р.</p>
+            <div class="products__price-container">
+              <p class="products__old-price">22500 Р.</p>
+              <p class="products__current-price">15500 Р.</p>
             </div>
           </li>
-          <li>
-            <h3>
-              <a href="#">Перфоратор BOSCH BFG 6000</a>
+          <li class="products__item">
+            <h3 class="products__title">
+              <a class="products__link" href="#">Перфоратор BOSCH BFG 6000</a>
             </h3>
-            <div>
-              <img src="img/perforator-3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000 - самый быстрый универсальный перфоратор в классе. Разнообразное применение для долбежных и сверлильных работ, а также при выполнении работ с полой сверлильной коронкой. Сверлит на 30% быстрее по сравнению с аналогичными инструментами других производителей. Низкий уровень вибрации для неутомительной работы благодаря системе гашения вибрации Vibration Control от Bosch.">
+            <div clas="products__img-container">
+              <img class="products__img" src="img/perforator-3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000 - самый быстрый универсальный перфоратор в классе. Разнообразное применение для долбежных и сверлильных работ, а также при выполнении работ с полой сверлильной коронкой. Сверлит на 30% быстрее по сравнению с аналогичными инструментами других производителей. Низкий уровень вибрации для неутомительной работы благодаря системе гашения вибрации Vibration Control от Bosch.">
             </div>
-            <div>
-              <p>30500 Р.</p>
-              <p>25500 Р.</p>
+            <div class="products__price-container">
+              <p class="products__old-price">30500 Р.</p>
+              <p class="products__current-price">25500 Р.</p>
             </div>
           </li>
-          <li>
-            <h3>
-              <a href="#">Перфоратор BOSCH BFG 2000</a>
+          <li class="products__item">
+            <h3 class="products__title">
+              <a class="products__link" href="#">Перфоратор BOSCH BFG 2000</a>
             </h3>
-            <div>
-              <img src="img/perforator-2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000 - имеет два режима работы - сверление с ударом и чистый удар. Выбор между ними осуществляется посредством тумблера. Благодаря патрону SDS-max, можно устанавливать профессиональную оснастку, а также быстро менять её в процессе работы. Дополнительная рукоять помогает прочно держать инструмент в руках, что особенно актуально для работы в режиме долбления.">
+            <div clas="products__img-container">
+              <img class="products__img" src="img/perforator-2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000 - имеет два режима работы - сверление с ударом и чистый удар. Выбор между ними осуществляется посредством тумблера. Благодаря патрону SDS-max, можно устанавливать профессиональную оснастку, а также быстро менять её в процессе работы. Дополнительная рукоять помогает прочно держать инструмент в руках, что особенно актуально для работы в режиме долбления.">
             </div>
-            <div>
-              <p>12500 Р.</p>
+            <div class="products__price-container">
+              <p class="products__current-price">12500 Р.</p>
             </div>
           </li>
         </ul>
@@ -198,8 +198,8 @@
 
       <section>
         <div>
-          <h2>Популярные производители</h2>
-          <a href="#">Все производители</a>
+          <h2 class="section-title">Популярные производители</h2>
+          <a class="button button_red" href="#">Все производители</a>
         </div>
 
         <!-- Ранее смело обернул img в параграф, так как по ТЗ должен обрабатываться щелчок по карточке, а не по картинке. Параграф мы бы растянули на всю li'шку и profit. Убрал, как ты советовал, но не понятно, как теперь мы сделаем переход по ссылке, если пользователь не попадет по картинке, но попадет по блоку? -->
@@ -249,7 +249,7 @@
       </section>
 
       <section>
-        <h2>Сервисы</h2>
+        <h2 class="section-title">Сервисы</h2>
 
         <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
 
@@ -267,7 +267,7 @@
 
         <ul aria-label="Описание услуги">
           <li>
-            <h3>Доставка</h3>
+            <h3 class="section-title">Доставка</h3>
             <p>
               Мы с удовольствием доставим ваш товар прямо<br>
               к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,<br>
@@ -275,7 +275,7 @@
             </p>
           </li>
           <li>
-            <h3>Гарантия</h3>
+            <h3 class="section-title">Гарантия</h3>
             <p>
               Если купленный у нас товар поломается или заискрит,<br>
               а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>
@@ -283,7 +283,7 @@
             </p>
           </li>
           <li>
-            <h3>Кредит</h3>
+            <h3 class="section-title">Кредит</h3>
             <p>
               Залезть в долговую яму стало проще!<br>
               Кредитные консультанты придут вам на помощь.
@@ -297,7 +297,7 @@
       <!-- Конец красной зоны -->
 
       <section class="about-company">
-        <h2 class="about-company__title">Компания «Техномарт»</h2>
+        <h2 class="about-company__title section-title">Компания «Техномарт»</h2>
 
         <p class="about-company__content">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
         <p class="about-company__content">Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
@@ -308,11 +308,11 @@
           <li class="about-company__delivery-item">ЖелДорЭкспедиция</li>
         </ul>
 
-        <a class="about-company__company-details button" href="#">Подробнее о компании</a>
+        <a class="about-company__company-details button button_red" href="#">Подробнее о компании</a>
       </section>
 
       <section class="contacts">
-        <h2 class="contacts__title">Контакты</h2>
+        <h2 class="contacts__title section-title">Контакты</h2>
 
         <p class="contacts__content">Вы можете забрать товар сами, заехав в наш офис:</p>
 
@@ -322,7 +322,7 @@
           </a>
         </div>
 
-        <a class="contacts__write-us button" href="#">Заблудились? Напишите нам!</a>
+        <a class="contacts__write-us button button_red" href="#">Заблудились? Напишите нам!</a>
       </section>
     </main>
 
