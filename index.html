@@ -101,23 +101,23 @@
         <ul class="rubrics__list" aria-label="Выбор рубрики">
           <li class="rubrics__ilem rubrics__ilem_matherials">
             <h3 class="rubrics__title">Материалы</h3>
-            <a class="rubrics__link" href="#">На любой вкус</a>
+            <a class="rubrics__link button button_black-transparent" href="#">На любой вкус</a>
           </li>
           <li class="rubrics__ilem rubrics__ilem_instrument">
             <h3 class="rubrics__title">Инструмент</h3>
-            <a class="rubrics__link" href="#">На все случаи</a>
+            <a class="rubrics__link button button_black-transparent" href="#">На все случаи</a>
           </li>
           <li class="rubrics__ilem rubrics__ilem_technics">
             <h3 class="rubrics__title">Техника</h3>
-            <a class="rubrics__link" href="#">Для стройки</a>
+            <a class="rubrics__link button button_black-transparent" href="#">Для стройки</a>
           </li>
           <li class="rubrics__ilem rubrics__ilem_discount">
             <h3 class="rubrics__title">Скидки 50%</h3>
-            <a class="rubrics__link" href="#">На 350 товаров</a>
+            <a class="rubrics__link button button_black-transparent" href="#">На 350 товаров</a>
           </li>
           <li class="rubrics__ilem rubrics__ilem_delivery">
             <h3 class="rubrics__title">Доставка</h3>
-            <a class="rubrics__link" href="#">Бесплатно</a>
+            <a class="rubrics__link button button_black-transparent" href="#">Бесплатно</a>
           </li>
           <li>
             <!-- По-моему, дрели и перфораторы тоже относятся к рубрике, поэтому включил слайдер в один ul с остальным. Пока разметил так. Картинка, по-моему, не контекстная -->
@@ -140,7 +140,7 @@
 
       <section class="popular-goods">
         <div class="popular-goods__container">
-          <h2 class="popular-goods__title section-title">Популярные товары</h2>
+          <h2 class="popular-goods__title section-title">Популярные товары:</h2>
           <a class="popular-goods__link button button_red" href="#">Все популярные товары</a>
         </div>
 
@@ -196,101 +196,103 @@
 
       </section>
 
-      <section>
-        <div>
-          <h2 class="section-title">Популярные производители</h2>
-          <a class="button button_red" href="#">Все производители</a>
+      <section class="manufactures">
+        <div class="manufactures__container">
+          <h2 class="manufactures__title section-title">Популярные производители:</h2>
+          <a class="manufactures__link button button_red" href="#">Все производители</a>
         </div>
 
         <!-- Ранее смело обернул img в параграф, так как по ТЗ должен обрабатываться щелчок по карточке, а не по картинке. Параграф мы бы растянули на всю li'шку и profit. Убрал, как ты советовал, но не понятно, как теперь мы сделаем переход по ссылке, если пользователь не попадет по картинке, но попадет по блоку? -->
-        <ul aria-label="Мы гордимся тем, что можем представлять продукцию следующих именитых брендов">
-          <li>
-            <a href="#">
-              <img src="img/logo-bosch.png" width="126" height="37" alt="Логотип компании Bosh">
+        <ul class="manufactures__list logo-list" aria-label="Мы гордимся тем, что можем представлять продукцию следующих именитых брендов">
+          <li class="logo-list__item">
+            <a class="logo-list__link" href="#">
+              <img class="logo-list__img" src="img/logo-bosch.png" width="126" height="37" alt="Логотип компании Bosh">
             </a>
           </li>
-          <li>
-            <a href="#">
-              <img src="img/logo-makita.png" width="123" height="40" alt="Логотип компании Makita">
+          <li class="logo-list__item">
+            <a class="logo-list__link" href="#">
+              <img class="logo-list__img" src="img/logo-makita.png" width="123" height="40" alt="Логотип компании Makita">
             </a>
           </li>
-          <li>
-            <a href="#">
-              <img src="img/logo-dewalt.png" width="146" height="44" alt="Логотип компании De-walt">
+          <li class="logo-list__item">
+            <a class="logo-list__link" href="#">
+              <img class="logo-list__img" src="img/logo-dewalt.png" width="146" height="44" alt="Логотип компании De-walt">
             </a>
           </li>
-          <li>
-            <a href="#">
-              <img src="img/logo-interscol.png" width="200" height="88" alt="Логотип компании Интерскол">
+          <li class="logo-list__item">
+            <a class="logo-list__link" href="#">
+              <img class="logo-list__img" src="img/logo-interscol.png" width="200" height="88" alt="Логотип компании Интерскол">
             </a>
           </li>
-          <li>
-            <a href="#">
-              <img src="img/logo-hitachi.png" width="169" height="31" alt="Логотип компании Hitachi">
+          <li class="logo-list__item">
+            <a class="logo-list__link" href="#">
+              <img class="logo-list__img" src="img/logo-hitachi.png" width="169" height="31" alt="Логотип компании Hitachi">
             </a>
           </li>
-          <li>
-            <a href="#">
-              <img src="img/logo-lg.png" width="121" height="73" alt="Логотип компании LG">
+          <li class="logo-list__item">
+            <a class="logo-list__link" href="#">
+              <img class="logo-list__img" src="img/logo-lg.png" width="121" height="73" alt="Логотип компании LG">
             </a>
           </li>
-          <li>
-            <a href="#">
-              <img src="img/logo-aeg.png" width="151" height="96" alt="Логотип компании AEG">
+          <li class="logo-list__item">
+            <a class="logo-list__link" href="#">
+              <img class="logo-list__img" src="img/logo-aeg.png" width="151" height="96" alt="Логотип компании AEG">
             </a>
           </li>
-          <li>
-            <a href="#">
-              <img src="img/logo-metabo.png" width="204" height="69" alt="Логотип компании Metabo">
+          <li class="logo-list__item">
+            <a class="logo-list__link" href="#">
+              <img class="logo-list__img" src="img/logo-metabo.png" width="204" height="69" alt="Логотип компании Metabo">
             </a>
           </li>
         </ul>
 
       </section>
 
-      <section>
-        <h2 class="section-title">Сервисы</h2>
+      <section class="servicess">
+        <h2 class="servicess__title section-title">Сервисы</h2>
 
-        <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-
-        <ul aria-label="Выбор услуги">
-          <li>
-            <button type="button">Доставка</button>
+        <p class="servicess__content">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+        <div class="servicess__container">
+          <ul class="servicess__select-service service-select" aria-label="Выбор услуги">
+          <li class="service-select__item">
+            <button class="service-select__button service-select__button_current" type="button">Доставка</button>
           </li>
-          <li>
-            <button type="button">Гарантия</button>
+          <li class="service-select__item">
+            <button class="service-select__button" type="button">Гарантия</button>
           </li>
-          <li>
-            <button type="button">Кредит</button>
+          <li class="service-select__item">
+            <button class="service-select__button" type="button">Кредит</button>
           </li>
         </ul>
 
-        <ul aria-label="Описание услуги">
-          <li>
-            <h3 class="section-title">Доставка</h3>
-            <p>
+        <ul class="servicess__description-service service-description" aria-label="Описание услуги">
+          <li class="service-description__item service-description__item_delivery">
+            <h3 class="service-description__title section-title">Доставка</h3>
+            <p class="service-description__content">
               Мы с удовольствием доставим ваш товар прямо<br>
               к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,<br>
               поднимая его на ваш этаж!
             </p>
           </li>
-          <li>
-            <h3 class="section-title">Гарантия</h3>
-            <p>
+          <li class="service-description__item service-description__item_guarantee">
+            <h3 class="service-description__title section-title">Гарантия</h3>
+            <p class="service-description__content">
               Если купленный у нас товар поломается или заискрит,<br>
               а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>
               Дом уж восстановите как-нибудь сами.
             </p>
           </li>
-          <li>
-            <h3 class="section-title">Кредит</h3>
-            <p>
+          <li class="service-description__item service-description__item_credit">
+            <h3 class="service-description__title section-title">Кредит</h3>
+            <p class="service-description__content">
               Залезть в долговую яму стало проще!<br>
               Кредитные консультанты придут вам на помощь.
             </p>
-            <a href="#">Отправить заявку</a>
+            <a class="service-description__link button button_red" href="#">Отправить заявку</a>
           </li>
         </ul>
+        </div>
+
 
       </section>
 
