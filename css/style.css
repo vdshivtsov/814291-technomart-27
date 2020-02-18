@@ -365,6 +365,10 @@ html {
 
 .button_red {
   background-color: rgba(238, 54, 67, 1);
+  display: block;
+  height: 38px;
+  padding-top: 11px;
+  border-radius: 3px;
 }
 
 .button_red:hover {
@@ -404,10 +408,22 @@ html {
   text-transform: uppercase;
 }
 
+.wrapper-940 {
+  width: 940px;
+  margin: 0 auto;
+}
+
 /*Local properties*/
 
 .header {
   background-color: rgba(244, 247, 249, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+.header__wrapper_top {
+  display: flex;
+  height: 42px;
 }
 
 .header__top {
@@ -417,6 +433,13 @@ html {
   background-color: rgba(41, 52, 73, 1);
 }
 
+.header__logo {
+  width: 220px;
+  height: 47px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .header__logo:hover,
 .header__logo:focus {
@@ -427,11 +450,19 @@ html {
   background-color: rgba(186, 39, 50, 1);
 }
 
+.header__search {
+  width: 270px;
+
+}
+
 .search-form__input {
   color: rgba(255, 255, 255, 1);
 
   background-color: rgba(41, 52, 73, 1);
   border: none;
+  padding: 0;
+  min-height: 42px;
+  width: 100%;
 }
 
 .search-form__input:focus {
@@ -446,16 +477,43 @@ html {
   background-color: rgba(255, 255, 255, 1);
 }
 
+.header__goods-actions {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  width: 450px;
+}
+
 .goods-actions {
   list-style: none;
 }
 
+.goods-actions__item {
+  width: 150px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .goods-actions__link {
   color: rgba(255, 255, 255, 1);
+  width: 150px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.goods-actions__link:hover,
+.goods-actions__link:focus {
+  background-color: rgba(33, 42, 58, 1);
 }
 
 .goods-actions__link:active {
   color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(22, 29, 41, 1);
 }
 
 .goods-actions__link_not-empty {
@@ -483,29 +541,60 @@ html {
   background-color: rgba(81, 133, 52, 1);
 }
 
+.header__middle {
+  height: 158px;
+}
+
+.header__wrapper_middle {
+  min-height: 158px;
+  margin-top: 46px;
+  display: flex;
+  align-items: flex-start;
+}
+
 .header__description {
   font-style: italic;
   font-size: 16px;
   line-height: 23px;
   color: rgba(238, 54, 67, 1);
+  width: 197px;
+  margin: 0;
+  margin-right: 70px;
+  margin-left: 53px;
+  margin-top: 3px;
 }
 
 .header__contacts {
   text-align: center;
+  margin-right: 69px;
 }
 
 .header__telephone {
+  margin-bottom: 4px;
+}
+
+.header__telephone a {
   font-size: 21px;
   line-height: 21px;
   color: rgba(238, 54, 67, 1);
 
   border: solid 3px rgba(255, 255, 255, 1);
+  display: block;
+  width: 270px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header__adress {
   font-size: 14px;
   line-height: 24px;
   color: rgba(50, 66, 92, 1);
+}
+
+.header__authorization {
+  margin-left: auto;
 }
 
 .authorization {
@@ -516,6 +605,7 @@ html {
   font-size: 21px;
   line-height: 21px;
   color: rgba(0, 0, 0, 1);
+  display: flex;
 }
 
 .authorization__button {
@@ -523,6 +613,12 @@ html {
   color: inherit;
 
   background-color: rgba(255, 255, 255, 1);
+  margin-right: 10px;
+  padding-top: 12px;
+}
+
+.authorization__button:last-child {
+  margin: 0;
 }
 
 .authorization__button:hover,
@@ -532,6 +628,18 @@ html {
 
 .authorization__button:active {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.authorization__button_sign-in {
+  display: block;
+  width: 121px;
+  height: 45px;
+}
+
+.authorization__button_sign-up {
+  display: block;
+  width: 150px;
+  height: 45px;
 }
 
 .authorization__container_name {
@@ -593,14 +701,28 @@ html {
   box-shadow: inset 0 -5px 0 0 rgba(41, 52, 73, 1);
 }
 
+/*Точно по макету не рационально делать, тут явно ошибка дизайнера*/
 .navigation__list {
   list-style: none;
   text-align: center;
   color: rgba(255, 255, 255, 1);
+  display: flex;
+  min-height: 60px;
+  padding: 0;
+}
+
+.navigation__item {
+  flex-grow: 1;
 }
 
 .navigation__link {
   color: inherit;
+  height: 60px;
+  display: block;
+  padding: 0px;
+  padding-top: 20px;
+  font-size: 17px;
+  line-height: 17px;
 }
 
 .navigation__link:hover {
@@ -807,21 +929,40 @@ html {
 
 
 /*Конец красной зоны*/
+.main__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 85px;
+}
 
 .about-company {
   color: rgba(0, 0, 0, 1);
 
   background-color: transparent;
+
+  width: 542px;
+}
+
+.about-company__title {
+  margin-bottom: 27px;
 }
 
 .about-company__content {
   font-size: 13px;
   line-height: 24px;
   font-family: "PTSans", "Arial", sans-serif;
+  margin-bottom: 23px;
+  width: 100%;
+}
+
+.about-company__content:last-of-type {
+    width: 420px;
+    margin-bottom: 21px;
 }
 
 .about-company__delivery-list {
   list-style: none;
+  margin: 0;
 }
 
 .about-company__delivery-item {
@@ -829,13 +970,19 @@ html {
 
   font-size: 18px;
   line-height: 20px;
+  margin-bottom: 20px;
+  margin-left: -3px;
+}
+
+.about-company__delivery-item:last-of-type {
+  margin-bottom: 37px;
 }
 
 .about-company__delivery-item::before {
   content: "";
   position: absolute;
   top: calc(50% - 1px);
-  left: -36px;
+  left: -37px;
 
   width: 25px;
   height: 2px;
@@ -843,11 +990,17 @@ html {
   background-color: rgba(238, 54, 67, 1);
 }
 
+.about-company__company-details {
+  width: 220px;
+}
+
 .contacts {
   text-align: center;
   color: rgba(0, 0, 0, 1);
 
   background-color: transparent;
+
+  width: 300px;
 }
 
 .contacts__content {
@@ -855,6 +1008,16 @@ html {
   line-height: 24px;
   font-family: "PTSans", "Arial", sans-serif;
   text-align: left;
+  width: 195px;
+  margin-bottom: 32px;
+}
+
+.contacts__img {
+  margin-bottom: 34px;
+}
+
+.contacts__write-us {
+
 }
 
 /*===*/

@@ -10,47 +10,50 @@
 
     <header class="header">
       <div class="header__top">
-        <a class="header__logo our-logo">
-          <img src="img/logo.svg" width="109" height="19" alt="Логотип компании Техномарт">
-        </a>
+        <div class="header__wrapper_top wrapper-940">
+          <a class="header__logo our-logo">
+            <img src="img/logo.svg" width="109" height="19" alt="Логотип компании Техномарт">
+          </a>
 
-        <form class="header__search search-form" action="https://echo.htmlacademy.ru" method="get">
-          <label class="visually-hidden" for="search-field">Строка поиска</label>
-          <input class="search-form__input" type="search" name="search" id="search-field" placeholder="Поиск:">
-          <button class="visually-hidden" type="submit">Найти</button>
-        </form>
+          <form class="header__search search-form" action="https://echo.htmlacademy.ru" method="get">
+            <label class="visually-hidden" for="search-field">Строка поиска</label>
+            <input class="search-form__input" type="search" name="search" id="search-field" placeholder="Поиск:">
+            <button class="visually-hidden" type="submit">Найти</button>
+          </form>
 
-        <ul class="header__goods-actions goods-actions">
-          <li class="goods-actions__item">
-            <a class="goods-actions__link goods-actions__link_bookmarks" href="#">
-              Закладки: <span>0</span>
-            </a>
-          </li>
-          <li class="goods-actions__item">
-            <a class="goods-actions__link goods-actions__link_cart" href="#">
-              Корзина: <span>0</span>
-            </a>
-          </li>
-          <li class="goods-actions__item">
-            <a class="goods-actions__link goods-actions__link_checkout" href="#">Оформить заказ</a>
-          </li>
-        </ul>
+          <ul class="header__goods-actions goods-actions">
+            <li class="goods-actions__item">
+              <a class="goods-actions__link goods-actions__link_bookmarks" href="#">
+                Закладки: 0
+              </a>
+            </li>
+            <li class="goods-actions__item">
+              <a class="goods-actions__link goods-actions__link_cart" href="#">
+                Корзина: 0
+              </a>
+            </li>
+            <li class="goods-actions__item">
+              <a class="goods-actions__link goods-actions__link_checkout" href="#">Оформить заказ</a>
+            </li>
+          </ul>
+        </div>
       </div>
 
       <div class="header__middle">
-        <p class="header__description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+        <div class="header__wrapper_middle wrapper-940">
+          <p class="header__description">Интернет-магазин строительных материалов<br>и инструментов для ремонта</p>
 
-        <div class="header__contacts">
-          <p>
-            <a class="header__telephone" href="tel:+78125550555">
-              <span class="visually-hidden">Наш телефон:</span>
-                +7 (812) 555-05-55
-            </a>
-          </p>
-          <p class="header__adress">
-            <span class="visually-hidden">Наш адрес:</span>
-              г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-          </p>
+          <div class="header__contacts">
+            <div class="header__telephone">
+              <a href="tel:+78125550555">
+                <span class="visually-hidden">Наш телефон:</span>
+                  +7 (812) 555-05-55
+              </a>
+            </div>
+            <div class="header__adress">
+              <span class="visually-hidden">Наш адрес:</span>
+                г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+            </div>
         </div>
 
         <section class="header__authorization authorization">
@@ -62,28 +65,30 @@
 
         </section>
       </div>
+        </div>
+
 
       <nav class="header__navigation navigation">
-        <ul class="navigation__list">
+        <ul class="navigation__list wrapper-940">
           <li class="navigation__item">
             <a class="navigation__link">Главная</a>
           </li>
-          <li>
+          <li class="navigation__item">
             <a class="navigation__link" href="#">Компания</a>
           </li>
-          <li>
+          <li class="navigation__item">
             <a class="navigation__link" href="catalog.html">Каталог</a>
           </li>
-          <li>
+          <li class="navigation__item">
             <a class="navigation__link" href="#">Новости</a>
           </li>
-          <li>
+          <li class="navigation__item">
             <a class="navigation__link" href="#">Спецпредложения</a>
           </li>
-          <li>
+          <li class="navigation__item">
             <a class="navigation__link" href="#">Доставка</a>
           </li>
-          <li>
+          <li class="navigation__item">
             <a class="navigation__link" href="#">Контакты</a>
           </li>
         </ul>
@@ -298,34 +303,37 @@
 
       <!-- Конец красной зоны -->
 
-      <section class="about-company">
-        <h2 class="about-company__title section-title">Компания «Техномарт»</h2>
+      <div class="main__wrapper wrapper-940">
+        <section class="about-company">
+          <h2 class="about-company__title section-title">Компания «Техномарт»</h2>
 
-        <p class="about-company__content">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-        <p class="about-company__content">Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
+          <p class="about-company__content">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+          <p class="about-company__content">Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
 
-        <ul class="about-company__delivery-list">
-          <li class="about-company__delivery-item">Деловые линии</li>
-          <li class="about-company__delivery-item">Автотрейдинг</li>
-          <li class="about-company__delivery-item">ЖелДорЭкспедиция</li>
-        </ul>
+          <ul class="about-company__delivery-list">
+            <li class="about-company__delivery-item">Деловые линии</li>
+            <li class="about-company__delivery-item">Автотрейдинг</li>
+            <li class="about-company__delivery-item">ЖелДорЭкспедиция</li>
+          </ul>
 
-        <a class="about-company__company-details button button_red" href="#">Подробнее о компании</a>
-      </section>
+          <a class="about-company__company-details button button_red" href="#">Подробнее о компании</a>
+        </section>
 
-      <section class="contacts">
-        <h2 class="contacts__title section-title">Контакты</h2>
+        <section class="contacts">
+          <h2 class="contacts__title section-title">Контакты</h2>
 
-        <p class="contacts__content">Вы можете забрать товар сами, заехав в наш офис:</p>
+          <p class="contacts__content">Вы можете забрать товар сами, заехав в наш офис:</p>
 
-        <div class="contacts__img-container">
-          <a class="contacts__img-link" href="https://2gis.ru/spb/geo/5348660212677875">
-            <img class="contacts__img" src="img/contacts-map.png" width="300" height="158" alt="Расположение офиса на карте">
-          </a>
-        </div>
+          <div class="contacts__img-container">
+            <a class="contacts__img-link" href="https://2gis.ru/spb/geo/5348660212677875">
+              <img class="contacts__img" src="img/contacts-map.png" width="300" height="158" alt="Расположение офиса на карте">
+            </a>
+          </div>
 
-        <a class="contacts__write-us button button_red" href="#">Заблудились? Напишите нам!</a>
-      </section>
+          <a class="contacts__write-us button button_red" href="#">Заблудились? Напишите нам!</a>
+        </section>
+      </div>
+
     </main>
 
     <footer class="footer">
