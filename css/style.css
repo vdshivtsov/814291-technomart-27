@@ -555,14 +555,14 @@ html {
   color: rgba(238, 54, 67, 1);
   width: 197px;
   margin: 0;
-  margin-right: 70px;
   margin-left: 53px;
   margin-top: 3px;
+  margin-right: 71px;
 }
 
 .header__contacts {
   text-align: center;
-  margin-right: 69px;
+  margin: 0;
 }
 
 .header__telephone {
@@ -600,6 +600,15 @@ html {
   line-height: 21px;
   color: rgba(0, 0, 0, 1);
   display: flex;
+}
+
+.authorization__container_name {
+  background-color: rgba(255, 255, 255, 1);
+  width: 299px;
+  height: 45px;
+  padding-top: 12px;
+  text-align: center;
+  margin-bottom: 8px;
 }
 
 .authorization__button {
@@ -643,10 +652,15 @@ html {
   color: rgba(0, 0, 0, 1);
 
   background-color: rgba(255, 255, 255, 1);
+  padding-left: 13px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .authorization__name {
   color: inherit;
+  display: block;
 
   background-color: transparent;
 }
@@ -656,15 +670,20 @@ html {
 }
 
 .authorization__logout {
-  color: rgba(197, 197, 197, 1);
+  display: block;
 }
 
-.authorization__logout:hover {
-  color: rgba(50, 66, 92, 1);
+.authorization__logout-icon {
+  fill: rgba(197,197,197,1);
 }
 
-.authorization__logout:active {
-  color: rgba(197, 197, 197, 1);
+.authorization__logout-icon:hover,
+.authorization__logout-icon:focus {
+  fill: rgba(50, 66, 92, 1);
+}
+
+.authorization__logout-icon:active {
+  fill: rgba(197, 197, 197, 1);;
 }
 
 .authorization__container_personal {
@@ -672,6 +691,7 @@ html {
   line-height: 18px;
   text-align: left;
   color: rgba(50, 66, 92, 1);
+  margin-left: 18px;
 
   background-color: transparent;
 }
