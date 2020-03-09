@@ -323,6 +323,12 @@ a {
   box-sizing: inherit;
 }
 
+.products__img-container {
+    order: -1;
+    height: 170px;
+    margin-bottom: 9px;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -1078,16 +1084,16 @@ html {
 .main__title {
   order: 1;
   margin: 0;
-  padding: 32px 30px 27px;
-
+  padding: 32px 28px 27px;
   font-weight: normal;
   font-size: 30px;
   line-height: 30px;
   font-family: "Cuprum", "Arial", sans-serif;
   color: rgba(50, 66, 92, 1);
   text-transform: uppercase;
-
   background-color: rgba(242, 246, 248, 1);
+  width: 100%;
+  height: 89px;
 }
 
 .breadcrumbs {
@@ -1131,13 +1137,13 @@ html {
   padding-top: 13px;
   padding-bottom: 8px;
   padding-left: 20px;
-
   font-weight: normal;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
-
   background-color: rgba(247, 243, 236, 1);
+  width: 100%;
+  height: 38px;
 }
 
 .price-set__container_range {
@@ -1148,6 +1154,7 @@ html {
 .price-set {
   margin: 0;
   padding: 0;
+  margin-bottom: 42px;
 }
 
 .price-set__title {
@@ -1197,16 +1204,16 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 38px;
   padding: 0;
   padding-right: 17px;
   padding-left: 19px;
-
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
-
   background-color: rgba(247, 243, 236, 1);
+  width: 100%;
+  height: 38px;
+  margin-bottom: 22px;
 }
 
 .sorting__title {
@@ -1274,8 +1281,8 @@ html {
   margin: 0;
   margin-left: 46px;
   padding: 0;
-
   list-style: none;
+  justify-content: space-between;
 }
 
 .direction-list__icon {
@@ -1299,15 +1306,38 @@ html {
   border: none;
 }
 
+.manufact-set {
+    margin-bottom: 40px;
+}
+
 .filter__legend {
   font-weight: bold;
   font-size: 17px;
   line-height: 30px;
   text-transform: uppercase;
+  margin-bottom: 14px;
 }
 
 .filter__list {
   list-style: none;
+  padding:  0;
+  margin: 0;
+}
+
+.power-set__item {
+    margin-bottom: 20px;
+}
+
+.power-set__item:last-child {
+    margin-bottom: 0;
+}
+
+.manufact-set__item {
+    margin-bottom: 20px;
+}
+
+.manufact-set__item:last-child {
+    margin-bottom: 0;
 }
 
 /*ниже задаю параметры только тексту (как по заданию) так как чекбоксы мы потом стилизуем отдельно*/
@@ -1328,9 +1358,10 @@ html {
 .filter__button {
   font-size: 13px;
   color: rgba(0, 0, 0, 1);
-
   background-color: transparent;
   border: solid 1px rgba(229, 229, 229, 1);
+  width: 140px;
+  height: 38px;
 }
 
 .filter__button:hover,
@@ -1353,11 +1384,30 @@ html {
   font-family: "PT Sans", "Arial", sans-serif;
   text-align: center;
   color: rgba(0, 0, 0, 1);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 .products__item {
   background-color: rgba(255, 255, 255, 1);
   border: solid 1px rgba(229, 229, 229, 1);
+  width: 220px;
+  height: 318px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.products__item {
+}
+
+.products__item:nth-child(3n) {
+    margin-right: 0;
 }
 
 .products__item:hover,
@@ -1368,6 +1418,9 @@ html {
 .products__title {
   font-size: 18px;
   line-height: 20px;
+  margin: 0;
+  width: 158px;
+  margin-bottom: 12px;
 }
 
 .products__link {
@@ -1385,12 +1438,14 @@ html {
 .products__old-price {
   color: rgba(153, 153, 153, 1);
   text-decoration: line-through;
+  margin: 0;
+  margin-bottom: 9px;
 }
 
 .products__current-price {
   color: rgba(255, 255, 255, 1);
-
   background-color: rgba(238, 54, 67, 1);
+  margin: 0;
 }
 
 .products__buttons-container {

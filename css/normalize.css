@@ -149,6 +149,11 @@ img {
   border-style: none;
 }
 
+.products__img {
+    width: 100%;
+    height: 100%;
+}
+
 /* Forms
    ========================================================================== */
 
@@ -227,7 +232,12 @@ button:-moz-focusring,
  */
 
 fieldset {
-  padding: 0.35em 0.75em 0.625em;
+  padding: 0;
+  margin: 0;
+}
+
+.power-set {
+    margin-bottom: 78px;
 }
 
 /**
