@@ -415,7 +415,7 @@ html {
   text-transform: uppercase;
 }
 
-.wrapper-940 {
+.container {
   width: 940px;
   margin: 0 auto;
 }
@@ -1121,7 +1121,7 @@ html {
   margin-bottom: 58px;
 }
 
-.wrapper-700 {
+.wrapper {
   display: flex;
   flex-direction: column;
   width: 100%;
