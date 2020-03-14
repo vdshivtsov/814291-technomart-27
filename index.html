@@ -101,204 +101,219 @@
       <h1 class="visually-hidden">Магазин Техномарт</h1>
 
       <section class="main__rubrics rubrics">
-        <h2 class="visually-hidden">Рубрики</h2>
-
-        <ul class="rubrics__list" aria-label="Выбор рубрики">
-          <li class="rubrics__ilem rubrics__ilem_matherials">
-            <h3 class="rubrics__title">Материалы</h3>
-            <a class="rubrics__link button button_black-transparent" href="#">На любой вкус</a>
-          </li>
-          <li class="rubrics__ilem rubrics__ilem_instrument">
-            <h3 class="rubrics__title">Инструмент</h3>
-            <a class="rubrics__link button button_black-transparent" href="#">На все случаи</a>
-          </li>
-          <li class="rubrics__ilem rubrics__ilem_technics">
-            <h3 class="rubrics__title">Техника</h3>
-            <a class="rubrics__link button button_black-transparent" href="#">Для стройки</a>
-          </li>
-          <li class="rubrics__ilem rubrics__ilem_discount">
-            <h3 class="rubrics__title">Скидки 50%</h3>
-            <a class="rubrics__link button button_black-transparent" href="#">На 350 товаров</a>
-          </li>
-          <li class="rubrics__ilem rubrics__ilem_delivery">
-            <h3 class="rubrics__title">Доставка</h3>
-            <a class="rubrics__link button button_black-transparent" href="#">Бесплатно</a>
-          </li>
-          <li>
-            <!-- По-моему, дрели и перфораторы тоже относятся к рубрике, поэтому включил слайдер в один ul с остальным. Пока разметил так. Картинка, по-моему, не контекстная -->
-            <ul class="rubrics__categories slider-category" aria-label="Выбор категории товара">
-              <li class="slider-category__item slider-category__item_drills">
-                <h3 class="slider-category__title">Дрели</h3>
-                <p class="slider-category__content">Соседям на радость!</p>
-                <a class="slider-category__link button button_red" href="catalog.html">Открыть каталог</a>
-              </li>
-              <li class="slider-category__item slider-category__item_perforator">
-                <h3 class="slider-category__title">Перфораторы</h3>
-                <p class="slider-category__content">Настоящие мужские игрушки</p>
-                <a class="slider-category__link button button_red" href="catalog.html">Открыть каталог</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-
+        <div class="container">
+          <h2 class="visually-hidden">Рубрики</h2>
+          <!-- дальше немного усложнил структуру в угоду доступности блока -->
+          <ul class="rubrics__list" aria-label="Выбор рубрики">
+            <li>
+              <ul class="rubrics__list rubrics__list_row">
+                <li class="rubrics__ilem rubrics__ilem_matherials">
+                  <h3 class="rubrics__title">Материалы</h3>
+                  <a class="rubrics__link button button_black-transparent" href="#">На любой вкус</a>
+                </li>
+                <li class="rubrics__ilem rubrics__ilem_instrument">
+                  <h3 class="rubrics__title">Инструмент</h3>
+                  <a class="rubrics__link button button_black-transparent" href="#">На все случаи</a>
+                </li>
+                <li class="rubrics__ilem rubrics__ilem_technics">
+                  <h3 class="rubrics__title">Техника</h3>
+                  <a class="rubrics__link button button_black-transparent" href="#">Для стройки</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <ul class="rubrics__list rubrics__list_row-reverse">
+                <li>
+                  <ul class="rubrics__list rubrics__list_column">
+                    <li class="rubrics__ilem rubrics__ilem_discount">
+                      <h3 class="rubrics__title">Скидки 50%</h3>
+                      <a class="rubrics__link button button_black-transparent" href="#">На 350 товаров</a>
+                    </li>
+                    <li class="rubrics__ilem rubrics__ilem_delivery">
+                      <h3 class="rubrics__title">Доставка</h3>
+                      <a class="rubrics__link button button_black-transparent" href="#">Бесплатно</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <ul class="rubrics__categories slider-category" aria-label="Выбор категории товара">
+                    <li class="slider-category__item slider-category__item_drills">
+                      <h3 class="slider-category__title">Дрели</h3>
+                      <p class="slider-category__content">Соседям на радость!</p>
+                      <a class="slider-category__link button button_red" href="catalog.html">Открыть каталог</a>
+                    </li>
+                    <li class="visually-hidden slider-category__item slider-category__item_perforator">
+                      <h3 class="slider-category__title">Перфораторы</h3>
+                      <p class="slider-category__content">Настоящие мужские игрушки</p>
+                      <a class="slider-category__link button button_red" href="catalog.html">Открыть каталог</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="popular-goods">
-        <div class="popular-goods__container">
-          <h2 class="popular-goods__title section-title">Популярные товары:</h2>
-          <a class="popular-goods__link button button_red" href="#">Все популярные товары</a>
+        <div class="container">
+          <div class="popular-goods__container">
+            <h2 class="popular-goods__title section-title">Популярные товары:</h2>
+            <a class="popular-goods__link button button_red" href="#">Все популярные товары</a>
+          </div>
+
+          <ul class="popular-goods__list products" aria-label="Одни из самых популярных предложений в нашем каталоге">
+            <li class="products__item">
+              <h3 class="products__title">
+                <a class="products__link" href="#">Перфоратор BOSCH BFG 9000</a>
+              </h3>
+              <div class="products__img-container">
+                <img class="products__img" src="img/perforator-1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000 - производитель инструмента Bosch создал эту модель для использования как в быту, так и на производстве. Перфоратор предназначен для создания отверстий в металле, в дереве и других твердых материалах. В режиме «сверление с ударом» или «долбление» инструмент способен продолбить отверстие в бетоне, кирпиче, керамике. А если переключиться в режим «завинчивание» инструмент превращается в обычный шуруповерт, которым можно вкручивать саморезы.">
+              </div>
+              <div class="products__price-container">
+                <p class="products__old-price">32500 Р.</p>
+                <p class="products__current-price">25500 Р.</p>
+              </div>
+            </li>
+            <li class="products__item">
+              <h3 class="products__title">
+                <a class="products__link" href="#">Перфоратор BOSCH BFG 3000</a>
+              </h3>
+              <div class="products__img-container">
+                <img class="products__img" src="img/perforator-2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000 - максимальная производительность при минимуме вибраций. Высокая производительность сверления и увеличение производительности долбления на 20 % по сравнению с другими перфораторами этого класса. Низкий уровень вибрации для не утомительной работы благодаря системе гашения вибрации Vibration Control от Bosch. Сменный патрон для быстрой смены между ударным сверлением в бетоне и сверлением без удара в древесине и металле.">
+              </div>
+              <div class="products__price-container">
+                <p class="products__old-price">22500 Р.</p>
+                <p class="products__current-price">15500 Р.</p>
+              </div>
+            </li>
+            <li class="products__item">
+              <h3 class="products__title">
+                <a class="products__link" href="#">Перфоратор BOSCH BFG 6000</a>
+              </h3>
+              <div class="products__img-container">
+                <img class="products__img" src="img/perforator-3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000 - самый быстрый универсальный перфоратор в классе. Разнообразное применение для долбежных и сверлильных работ, а также при выполнении работ с полой сверлильной коронкой. Сверлит на 30% быстрее по сравнению с аналогичными инструментами других производителей. Низкий уровень вибрации для неутомительной работы благодаря системе гашения вибрации Vibration Control от Bosch.">
+              </div>
+              <div class="products__price-container">
+                <p class="products__old-price">30500 Р.</p>
+                <p class="products__current-price">25500 Р.</p>
+              </div>
+            </li>
+            <li class="products__item">
+              <h3 class="products__title">
+                <a class="products__link" href="#">Перфоратор BOSCH BFG 2000</a>
+              </h3>
+              <div class="products__img-container">
+                <img class="products__img" src="img/perforator-2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000 - имеет два режима работы - сверление с ударом и чистый удар. Выбор между ними осуществляется посредством тумблера. Благодаря патрону SDS-max, можно устанавливать профессиональную оснастку, а также быстро менять её в процессе работы. Дополнительная рукоять помогает прочно держать инструмент в руках, что особенно актуально для работы в режиме долбления.">
+              </div>
+              <div class="products__price-container">
+                <p class="products__current-price">12500 Р.</p>
+              </div>
+            </li>
+          </ul>
         </div>
-
-        <ul class="popular-goods__list products" aria-label="Одни из самых популярных предложений в нашем каталоге">
-          <li class="products__item">
-            <h3 class="products__title">
-              <a class="products__link" href="#">Перфоратор BOSCH BFG 9000</a>
-            </h3>
-            <div class="products__img-container">
-              <img class="products__img" src="img/perforator-1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000 - производитель инструмента Bosch создал эту модель для использования как в быту, так и на производстве. Перфоратор предназначен для создания отверстий в металле, в дереве и других твердых материалах. В режиме «сверление с ударом» или «долбление» инструмент способен продолбить отверстие в бетоне, кирпиче, керамике. А если переключиться в режим «завинчивание» инструмент превращается в обычный шуруповерт, которым можно вкручивать саморезы.">
-            </div>
-            <div class="products__price-container">
-              <p class="products__old-price">32500 Р.</p>
-              <p class="products__current-price">25500 Р.</p>
-            </div>
-          </li>
-          <li class="products__item">
-            <h3 class="products__title">
-              <a class="products__link" href="#">Перфоратор BOSCH BFG 3000</a>
-            </h3>
-            <div class="products__img-container">
-              <img class="products__img" src="img/perforator-2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000 - максимальная производительность при минимуме вибраций. Высокая производительность сверления и увеличение производительности долбления на 20 % по сравнению с другими перфораторами этого класса. Низкий уровень вибрации для не утомительной работы благодаря системе гашения вибрации Vibration Control от Bosch. Сменный патрон для быстрой смены между ударным сверлением в бетоне и сверлением без удара в древесине и металле.">
-            </div>
-            <div class="products__price-container">
-              <p class="products__old-price">22500 Р.</p>
-              <p class="products__current-price">15500 Р.</p>
-            </div>
-          </li>
-          <li class="products__item">
-            <h3 class="products__title">
-              <a class="products__link" href="#">Перфоратор BOSCH BFG 6000</a>
-            </h3>
-            <div class="products__img-container">
-              <img class="products__img" src="img/perforator-3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000 - самый быстрый универсальный перфоратор в классе. Разнообразное применение для долбежных и сверлильных работ, а также при выполнении работ с полой сверлильной коронкой. Сверлит на 30% быстрее по сравнению с аналогичными инструментами других производителей. Низкий уровень вибрации для неутомительной работы благодаря системе гашения вибрации Vibration Control от Bosch.">
-            </div>
-            <div class="products__price-container">
-              <p class="products__old-price">30500 Р.</p>
-              <p class="products__current-price">25500 Р.</p>
-            </div>
-          </li>
-          <li class="products__item">
-            <h3 class="products__title">
-              <a class="products__link" href="#">Перфоратор BOSCH BFG 2000</a>
-            </h3>
-            <div class="products__img-container">
-              <img class="products__img" src="img/perforator-2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000 - имеет два режима работы - сверление с ударом и чистый удар. Выбор между ними осуществляется посредством тумблера. Благодаря патрону SDS-max, можно устанавливать профессиональную оснастку, а также быстро менять её в процессе работы. Дополнительная рукоять помогает прочно держать инструмент в руках, что особенно актуально для работы в режиме долбления.">
-            </div>
-            <div class="products__price-container">
-              <p class="products__current-price">12500 Р.</p>
-            </div>
-          </li>
-        </ul>
-
       </section>
 
       <section class="manufactures">
-        <div class="manufactures__container">
-          <h2 class="manufactures__title section-title">Популярные производители:</h2>
-          <a class="manufactures__link button button_red" href="#">Все производители</a>
+        <div class="container">
+          <div class="manufactures__container">
+            <h2 class="manufactures__title section-title">Популярные производители:</h2>
+            <a class="manufactures__link button button_red" href="#">Все производители</a>
+          </div>
+
+          <ul class="manufactures__list logo-list" aria-label="Мы гордимся тем, что можем представлять продукцию следующих именитых брендов">
+            <li class="logo-list__item">
+              <a class="logo-list__link" href="#">
+                <img class="logo-list__img" src="img/logo-bosch.png" width="126" height="37" alt="Логотип компании Bosh">
+              </a>
+            </li>
+            <li class="logo-list__item">
+              <a class="logo-list__link" href="#">
+                <img class="logo-list__img" src="img/logo-makita.png" width="123" height="40" alt="Логотип компании Makita">
+              </a>
+            </li>
+            <li class="logo-list__item">
+              <a class="logo-list__link" href="#">
+                <img class="logo-list__img" src="img/logo-dewalt.png" width="146" height="44" alt="Логотип компании De-walt">
+              </a>
+            </li>
+            <li class="logo-list__item">
+              <a class="logo-list__link" href="#">
+                <img class="logo-list__img" src="img/logo-interscol.png" width="200" height="88" alt="Логотип компании Интерскол">
+              </a>
+            </li>
+            <li class="logo-list__item">
+              <a class="logo-list__link" href="#">
+                <img class="logo-list__img" src="img/logo-hitachi.png" width="169" height="31" alt="Логотип компании Hitachi">
+              </a>
+            </li>
+            <li class="logo-list__item">
+              <a class="logo-list__link" href="#">
+                <img class="logo-list__img" src="img/logo-lg.png" width="121" height="73" alt="Логотип компании LG">
+              </a>
+            </li>
+            <li class="logo-list__item">
+              <a class="logo-list__link" href="#">
+                <img class="logo-list__img" src="img/logo-aeg.png" width="151" height="96" alt="Логотип компании AEG">
+              </a>
+            </li>
+            <li class="logo-list__item">
+              <a class="logo-list__link" href="#">
+                <img class="logo-list__img" src="img/logo-metabo.png" width="204" height="69" alt="Логотип компании Metabo">
+              </a>
+            </li>
+          </ul>
         </div>
 
-        <!-- Ранее смело обернул img в параграф, так как по ТЗ должен обрабатываться щелчок по карточке, а не по картинке. Параграф мы бы растянули на всю li'шку и profit. Убрал, как ты советовал, но не понятно, как теперь мы сделаем переход по ссылке, если пользователь не попадет по картинке, но попадет по блоку? -->
-        <ul class="manufactures__list logo-list" aria-label="Мы гордимся тем, что можем представлять продукцию следующих именитых брендов">
-          <li class="logo-list__item">
-            <a class="logo-list__link" href="#">
-              <img class="logo-list__img" src="img/logo-bosch.png" width="126" height="37" alt="Логотип компании Bosh">
-            </a>
-          </li>
-          <li class="logo-list__item">
-            <a class="logo-list__link" href="#">
-              <img class="logo-list__img" src="img/logo-makita.png" width="123" height="40" alt="Логотип компании Makita">
-            </a>
-          </li>
-          <li class="logo-list__item">
-            <a class="logo-list__link" href="#">
-              <img class="logo-list__img" src="img/logo-dewalt.png" width="146" height="44" alt="Логотип компании De-walt">
-            </a>
-          </li>
-          <li class="logo-list__item">
-            <a class="logo-list__link" href="#">
-              <img class="logo-list__img" src="img/logo-interscol.png" width="200" height="88" alt="Логотип компании Интерскол">
-            </a>
-          </li>
-          <li class="logo-list__item">
-            <a class="logo-list__link" href="#">
-              <img class="logo-list__img" src="img/logo-hitachi.png" width="169" height="31" alt="Логотип компании Hitachi">
-            </a>
-          </li>
-          <li class="logo-list__item">
-            <a class="logo-list__link" href="#">
-              <img class="logo-list__img" src="img/logo-lg.png" width="121" height="73" alt="Логотип компании LG">
-            </a>
-          </li>
-          <li class="logo-list__item">
-            <a class="logo-list__link" href="#">
-              <img class="logo-list__img" src="img/logo-aeg.png" width="151" height="96" alt="Логотип компании AEG">
-            </a>
-          </li>
-          <li class="logo-list__item">
-            <a class="logo-list__link" href="#">
-              <img class="logo-list__img" src="img/logo-metabo.png" width="204" height="69" alt="Логотип компании Metabo">
-            </a>
-          </li>
-        </ul>
 
       </section>
 
       <section class="servicess">
-        <h2 class="servicess__title section-title">Сервисы</h2>
+        <div class="container">
+          <h2 class="servicess__title section-title">Сервисы</h2>
 
-        <p class="servicess__content">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-        <div class="servicess__container">
-          <ul class="servicess__select-service service-select" aria-label="Выбор услуги">
-          <li class="service-select__item">
-            <button class="service-select__button service-select__button_current" type="button">Доставка</button>
-          </li>
-          <li class="service-select__item">
-            <button class="service-select__button" type="button">Гарантия</button>
-          </li>
-          <li class="service-select__item">
-            <button class="service-select__button" type="button">Кредит</button>
-          </li>
-        </ul>
+          <p class="servicess__content">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+          <div class="servicess__container">
+            <ul class="servicess__select-service service-select" aria-label="Выбор услуги">
+              <li class="service-select__item">
+                <button class="service-select__button service-select__button_current" type="button">Доставка</button>
+              </li>
+              <li class="service-select__item">
+                <button class="service-select__button" type="button">Гарантия</button>
+              </li>
+              <li class="service-select__item">
+                <button class="service-select__button" type="button">Кредит</button>
+              </li>
+            </ul>
 
-        <ul class="servicess__description-service service-description" aria-label="Описание услуги">
-          <li class="service-description__item service-description__item_delivery">
-            <h3 class="service-description__title section-title">Доставка</h3>
-            <p class="service-description__content">
-              Мы с удовольствием доставим ваш товар прямо<br>
-              к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,<br>
-              поднимая его на ваш этаж!
-            </p>
-          </li>
-          <li class="service-description__item service-description__item_guarantee">
-            <h3 class="service-description__title section-title">Гарантия</h3>
-            <p class="service-description__content">
-              Если купленный у нас товар поломается или заискрит,<br>
-              а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>
-              Дом уж восстановите как-нибудь сами.
-            </p>
-          </li>
-          <li class="service-description__item service-description__item_credit">
-            <h3 class="service-description__title section-title">Кредит</h3>
-            <p class="service-description__content">
-              Залезть в долговую яму стало проще!<br>
-              Кредитные консультанты придут вам на помощь.
-            </p>
-            <a class="service-description__link button button_red" href="#">Отправить заявку</a>
-          </li>
-        </ul>
+            <ul class="servicess__description-service service-description" aria-label="Описание услуги">
+              <li class="service-description__item service-description__item_delivery">
+                <h3 class="service-description__title section-title">Доставка</h3>
+                <p class="service-description__content">
+                  Мы с удовольствием доставим ваш товар прямо<br>
+                  к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,<br>
+                  поднимая его на ваш этаж!
+                </p>
+              </li>
+              <li class="visually-hidden service-description__item service-description__item_guarantee">
+                <h3 class="service-description__title section-title">Гарантия</h3>
+                <p class="service-description__content">
+                  Если купленный у нас товар поломается или заискрит,<br>
+                  а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>
+                  Дом уж восстановите как-нибудь сами.
+                </p>
+              </li>
+              <li class="visually-hidden service-description__item service-description__item_credit">
+                <h3 class="service-description__title section-title">Кредит</h3>
+                <p class="service-description__content">
+                  Залезть в долговую яму стало проще!<br>
+                  Кредитные консультанты придут вам на помощь.
+                </p>
+                <a class="service-description__link button button_red" href="#">Отправить заявку</a>
+              </li>
+            </ul>
+          </div>
         </div>
-
-
       </section>
 
       <!-- Конец красной зоны -->
@@ -410,7 +425,7 @@
       </div>
     </footer>
 
-    <section class="popup-write-us">
+    <section class="visually-hidden popup-write-us">
       <h2 class="visually-hidden">Напишите нам</h2>
       <form action="https://echo.htmlacademy.ru" method="post">
         <div>
@@ -430,7 +445,7 @@
       <button type="button">Закрыть</button>
     </section>
 
-    <section class="popup-map">
+    <section class="visually-hidden popup-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <div>
         <!-- Когда будем подключать интерактивную карту через JS, изображение скроем, а пока, чтобы обеспечить доступность, вставляем как контентное изображение с атрибутом alt. Или же можно в div добавить скрытый абзац с адресом, а диву задать изображение как бэкграунд, а поверх него добавить карту на JS -->
@@ -440,6 +455,6 @@
     </section>
 
     <!-- A web browser page reloading plugin for the Sublime Text 3 editor -->
-    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+    <!-- <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script> -->
   </body>
 </html>
