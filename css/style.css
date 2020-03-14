@@ -351,7 +351,11 @@ html {
 
 /*Temporary properties*/
 
-
+.popup-map,
+.popup-write-us,
+.popup-add-cart {
+  display: none;
+}
 
 /*Mix properties*/
 
@@ -473,6 +477,10 @@ html {
 
 .search-form__input::placeholder {
   color: rgba(255, 255, 255, 1);
+  padding-left: 49px;
+  background-image: url("../img/icon-search.svg");
+  background-repeat: no-repeat;
+  background-position: center left 17px;
 }
 
 .search-form__input:focus {
@@ -498,11 +506,9 @@ html {
 
 .goods-actions__link {
   display: flex;
-  justify-content: center;
   align-items: center;
   width: 150px;
   height: 100%;
-
   text-align: center;
   color: rgba(255, 255, 255, 1);
 }
@@ -528,8 +534,23 @@ html {
   background-color: rgba(202, 44, 55, 1);
 }
 
+.goods-actions__link_bookmarks {
+  background-image: url("../img/icon-bookmark.svg");
+  background-repeat: no-repeat;
+  background-position: center left 18px;
+  padding-left: 45px;
+}
+
+.goods-actions__link_cart {
+  background-image: url("../img/icon-cart.svg");
+  background-repeat: no-repeat;
+  background-position: center left 18px;
+  padding-left: 50px;
+}
+
 .goods-actions__link_checkout {
   background-color: rgba(99, 166, 62, 1);
+  justify-content: center;
 }
 
 .goods-actions__link_checkout:hover,
@@ -575,6 +596,9 @@ html {
 
 .header__telephone {
   margin-bottom: 4px;
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: center left 15px;
 }
 
 .header__telephone a {
@@ -582,11 +606,11 @@ html {
   width: 270px;
   min-height: 45px;
   padding-top: 9px;
-
+  padding-left: 70px;
+  text-align: left;
   font-size: 21px;
   line-height: 21px;
   color: rgba(238, 54, 67, 1);
-
   border: solid 3px rgba(255, 255, 255, 1);
 }
 
@@ -650,6 +674,11 @@ html {
   display: block;
   width: 121px;
   min-height: 45px;
+  background-image: url("../img/icon-login.svg");
+  background-repeat: no-repeat;
+  background-position: center left 14px;
+  text-align: left;
+  padding-left: 48px;
 }
 
 .authorization__button_sign-up {
