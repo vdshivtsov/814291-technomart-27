@@ -1062,6 +1062,7 @@ html {
 }
 
 .slider__toggle {
+  cursor: pointer;
   width: 10px;
   height: 10px;
   border: none;
@@ -1071,7 +1072,13 @@ html {
   padding: 0;
 }
 
+.slider__toggle_active {
+  cursor: default;
+}
+
+
 .slider__toggle_active:after {
+  cursor: default;
   position: absolute;
   content: "";
   left: 2px;
@@ -1219,6 +1226,7 @@ html {
 }
 
 .service-select__button {
+  cursor: pointer;
   width: 100%;
   padding: 0;
   padding-left: 22px;
@@ -1245,6 +1253,7 @@ html {
 .service-select__button_current:focus,
 .service-select__button_current:active {
   color: rgba(50, 66, 92, 1);
+  cursor: default;
 
   background-color: rgba(255, 255, 255, 1);
   box-shadow: 0 1px 0 0 rgba(255, 255, 255, 1),
