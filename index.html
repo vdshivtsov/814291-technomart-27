@@ -107,7 +107,7 @@
           <ul class="rubrics__list" aria-label="Выбор рубрики">
             <li>
               <ul class="rubrics__list rubrics__list_row">
-                <li class="rubrics__ilem rubrics__ilem_matherials">
+                <li class="rubrics__ilem rubrics__ilem_new rubrics__ilem_matherials">
                   <h3 class="rubrics__title">Материалы</h3>
                   <a class="rubrics__link button button_black-transparent" href="#">На любой вкус</a>
                 </li>
@@ -136,16 +136,36 @@
                   </ul>
                 </li>
                 <li>
-                  <ul class="rubrics__categories slider-category" aria-label="Выбор категории товара">
-                    <li class="slider-category__item slider-category__item_drills">
-                      <h3 class="slider-category__title">Дрели</h3>
-                      <p class="slider-category__content">Соседям на радость!</p>
-                      <a class="slider-category__link button button_red" href="catalog.html">Открыть каталог</a>
+                  <ul class="slider">
+                    <li>
+                      <ul class="rubrics__categories slider-category" aria-label="Выбор категории товара">
+                        <li class="slider-category__item slider-category__item_active slider-category__item_drills">
+                          <h3 class="slider-category__title">Дрели</h3>
+                          <p class="slider-category__content">Соседям на радость!</p>
+                          <a class="slider-category__link button button_red" href="catalog.html">Открыть каталог</a>
+                        </li>
+                        <li class="visually-hidden slider-category__item slider-category__item_perforator">
+                          <h3 class="slider-category__title">Перфораторы</h3>
+                          <p class="slider-category__content">Настоящие мужские игрушки</p>
+                          <a class="slider-category__link button button_red" href="catalog.html">Открыть каталог</a>
+                        </li>
+                      </ul>
                     </li>
-                    <li class="visually-hidden slider-category__item slider-category__item_perforator">
-                      <h3 class="slider-category__title">Перфораторы</h3>
-                      <p class="slider-category__content">Настоящие мужские игрушки</p>
-                      <a class="slider-category__link button button_red" href="catalog.html">Открыть каталог</a>
+                    <li class="slider__controls">
+                      <div class="slider__arrows">
+                        <button class="slider__arrow slider__arrow_prev" value="Предыдущий">Предыдущий</button>
+                        <button class="slider__arrow slider__arrow_next" value="Следующий">Следующий</button>
+                      </div>
+                      <div class="slider__toggles">
+                        <ol class="slider_toogles-list toogles-list">
+                          <li class="toogles-list__item">
+                            <button class="slider__toggle slider__toggle_active" value="1">1 слайд</button>
+                          </li>
+                          <li class="toogles-list__item">
+                            <button class="slider__toggle" name="arrow-next" value="2">2 слайд</button>
+                          </li>
+                        </ol>
+                      </div>
                     </li>
                   </ul>
                 </li>
@@ -199,7 +219,7 @@
                 <p class="products__current-price">25500 Р.</p>
               </div>
             </li>
-            <li class="products__item">
+            <li class="products__item products__item_new">
               <h3 class="products__title">
                 <a class="products__link" href="#">Перфоратор BOSCH BFG 2000</a>
               </h3>
@@ -287,7 +307,7 @@
             </ul>
 
             <ul class="servicess__description-service service-description" aria-label="Описание услуги">
-              <li class="service-description__item service-description__item_delivery">
+              <li class="service-description__item service-description__item_active service-description__item_delivery">
                 <h3 class="service-description__title section-title">Доставка</h3>
                 <p class="service-description__content">
                   Мы с удовольствием доставим ваш товар прямо<br>
@@ -295,7 +315,7 @@
                   поднимая его на ваш этаж!
                 </p>
               </li>
-              <li class="visually-hidden service-description__item service-description__item_guarantee">
+              <li class="service-description__item service-description__item_guarantee">
                 <h3 class="service-description__title section-title">Гарантия</h3>
                 <p class="service-description__content">
                   Если купленный у нас товар поломается или заискрит,<br>
@@ -303,7 +323,7 @@
                   Дом уж восстановите как-нибудь сами.
                 </p>
               </li>
-              <li class="visually-hidden service-description__item service-description__item_credit">
+              <li class="service-description__item service-description__item_credit">
                 <h3 class="service-description__title section-title">Кредит</h3>
                 <p class="service-description__content">
                   Залезть в долговую яму стало проще!<br>
