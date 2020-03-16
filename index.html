@@ -18,18 +18,36 @@
           <form class="header__search search-form" action="https://echo.htmlacademy.ru" method="get">
             <label class="visually-hidden" for="search-field">Строка поиска</label>
             <input class="search-form__input" type="search" name="search" id="search-field" placeholder="Поиск:">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17px" height="17px" viewBox="0 0 17 17" enable-background="new 0 0 17 17" xml:space="preserve">
+            <g id="search-icon">
+              </g>
+                <g id="search-icon-2">
+                  <path d="M17,15.586l-3.542-3.542C14.421,10.782,15,9.21,15,7.5C15,3.358,11.643,0,7.5,0C3.358,0,0,3.358,0,7.5 C0,11.643,3.358,15,7.5,15c1.71,0,3.282-0.579,4.544-1.542L15.586,17L17,15.586z M2,7.5C2,4.467,4.467,2,7.5,2 C10.532,2,13,4.467,13,7.5c0,3.032-2.468,5.5-5.5,5.5C4.467,13,2,10.532,2,7.5z"/>
+              </g>
+            </svg>
             <button class="visually-hidden" type="submit">Найти</button>
           </form>
 
           <ul class="header__goods-actions goods-actions">
             <li class="goods-actions__item">
               <a class="goods-actions__link goods-actions__link_bookmarks" href="#">
-                Закладки: 0
+                <svg version="1.1" id="bookmark-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="16px" viewBox="0 0 14 16" enable-background="new 0 0 14 16" xml:space="preserve">
+                  <path d="M14,15c0,0.55-0.368,0.741-0.818,0.426l-5.363-3.765c-0.45-0.315-1.187-0.315-1.637,0l-5.364,3.765
+                  C0.368,15.741,0,15.55,0,15V1c0-0.55,0.45-1,1-1h12c0.55,0,1,0.45,1,1V15z"/>
+                </svg>
+                <span>Закладки: 0</span>
               </a>
             </li>
             <li class="goods-actions__item">
               <a class="goods-actions__link goods-actions__link_cart" href="#">
-                Корзина: 0
+                <svg version="1.1" id="cart-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+                  <g>
+                    <circle cx="4.5" cy="13.5" r="1.5"/>
+                    <circle cx="12.5" cy="13.5" r="1.5"/>
+                    <polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951  "/>
+                  </g>
+                </svg>
+                <span>Корзина: 0</span>
               </a>
             </li>
             <li class="goods-actions__item">
@@ -59,7 +77,15 @@
           <section class="header__authorization authorization">
             <h2 class="visually-hidden">Авторизация</h2>
             <div class="authorization__container_buttons">
-              <a class="authorization__button authorization__button_sign-in" href="#">Войти</a>
+              <a class="authorization__button authorization__button_sign-in" href="#">
+                <svg version="1.1" id="login-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="17px" viewBox="0 0 20 17" xml:space="preserve">
+                  <g>
+                    <polygon points="14.875,8.5 6,0 6,6 0,6 0,11 6,11 6,17  "/>
+                  </g>
+                  <path d="M16.986,15.01h-5.027V17h5.027c2.178,0,3.004-1.81,3.029-3.026V3.028C19.99,1.811,19.164,0,16.986,0h-5.027 v1.99h5.027c0.839,0,0.992,0.681,1.01,1.057v10.904C17.979,14.327,17.825,15.01,16.986,15.01z"/>
+                </svg>
+                <span>Войти</span>
+              </a>
               <a class="authorization__button authorization__button_sign-up" href="#">Регистрация</a>
             </div>
 
@@ -447,31 +473,35 @@
 
     <section class="popup-write-us">
       <h2 class="visually-hidden">Напишите нам</h2>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <div>
-          <label for="name-field">Ваше имя:</label>
-          <input type="text" name="name" id="name-field" placeholder="Имя Фамилия">
+      <form class="popup-write-us__form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="popup-write-us__wrapper">
+          <div class="popup-write-us__container popup-write-us__container_name">
+            <label for="name-field">Ваше имя:</label>
+            <input type="text" name="name" id="name-field" placeholder="Имя Фамилия">
+          </div>
+          <div class="popup-write-us__container popup-write-us__container_email">
+            <label for="email-field">Ваш e-mail:</label>
+            <input type="email" name="email" id="email-field" placeholder="email@example.com">
+          </div>
+          <div class="popup-write-us__container popup-write-us__container_text">
+            <label for="message-field">Текст письма:</label>
+            <textarea name="message" id="message-field" placeholder="В свободной форме"></textarea>
+          </div>
         </div>
-        <div>
-          <label for="email-field">Ваш e-mail:</label>
-          <input type="email" name="email" id="email-field" placeholder="email@example.com">
+        <div class="popup-write-us__container popup-write-us__container_submit">
+          <button class="button button_red" type="submit">Отправить</button>
         </div>
-        <div>
-          <label for="message-field">Текст письма:</label>
-          <textarea name="message" id="message-field" placeholder="В свободной форме"></textarea>
-        </div>
-        <button type="submit">Отправить</button>
       </form>
-      <button type="button">Закрыть</button>
+      <button class="popup-write-us__close-button" type="button">Закрыть</button>
     </section>
 
     <section class="popup-map">
-      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <h2 class="popup-map__title visually-hidden">Как до нас добраться</h2>
       <div>
         <!-- Когда будем подключать интерактивную карту через JS, изображение скроем, а пока, чтобы обеспечить доступность, вставляем как контентное изображение с атрибутом alt. Или же можно в div добавить скрытый абзац с адресом, а диву задать изображение как бэкграунд, а поверх него добавить карту на JS -->
-        <img src="img/popup-map.png" alt="Мы располагаемся по адресу: город Санкт-Петербург, улица Большая Конюшенная, дом 19/8">
+        <img class="popup-map__image" src="img/popup-map.png" alt="Мы располагаемся по адресу: город Санкт-Петербург, улица Большая Конюшенная, дом 19/8">
       </div>
-      <button type="button">Закрыть</button>
+      <button class="popup-map__close-button" type="button">Закрыть</button>
     </section>
 
     <!-- A web browser page reloading plugin for the Sublime Text 3 editor -->
