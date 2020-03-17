@@ -742,12 +742,10 @@ html {
   justify-content: space-between;
   padding-right: 10px;
   padding-left: 13px;
-
   font-size: 21px;
   line-height: 21px;
   text-align: left;
   color: rgba(0, 0, 0, 1);
-
   background-color: rgba(255, 255, 255, 1);
 }
 
@@ -759,8 +757,25 @@ html {
   background-color: transparent;
 }
 
+.authorization__name > span {
+  margin-left: 9px;
+}
+
+.authorization__name > svg {
+  fill: rgba(197, 197, 197, 1);
+}
+
+.authorization__name:hover > svg,
+.authorization__name:focus > svg {
+  fill: rgba(50, 66, 92, 1);
+}
+
 .authorization__name:active {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.authorization__name:active > svg {
+  fill: rgba(197, 197, 197, 1);
 }
 
 .authorization__logout {
@@ -794,6 +809,19 @@ html {
 .authorization__personal {
   color: inherit;
   text-decoration: underline;
+  position: relative;
+  margin-right: 28px;
+}
+
+.authorization__personal:not(:last-child):after {
+  content: "";
+  width: 4px;
+  height: 4px;
+  background-color: rgba(50, 66, 92, 1);
+  border-radius: 50%;
+  position: absolute;
+  right: -19px;
+  top: 40%;
 }
 
 .authorization__personal:hover,
