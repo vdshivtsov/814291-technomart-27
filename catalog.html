@@ -137,7 +137,20 @@
 
           <ul class="main__breadcrumbs breadcrumbs">
             <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="index.html">На главную</a>
+              <a class="breadcrumbs__link" href="index.html">
+                <svg version="1.1" id="home-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#C1C6CE00" x="0px" y="0px" width="0px" height="12px" viewBox="0 0 15 12" enable-background="new 0 0 15 12" xml:space="preserve">
+                  <g>
+                    <polygon points="3,8 3,12 7,12 7,8 9,8 9,12 13,12 13,8 8,3.516   "/>
+                    <path d="M14.831,6.365L13,4.751V0h-2v2.987L8.332,0.635c-0.02-0.017-0.043-0.023-0.064-0.037
+                      c-0.026-0.018-0.052-0.035-0.08-0.047C8.156,0.539,8.125,0.533,8.093,0.527C8.062,0.521,8.032,0.515,8,0.515
+                      c-0.031,0-0.061,0.006-0.092,0.012C7.875,0.533,7.845,0.539,7.813,0.552C7.785,0.563,7.76,0.581,7.733,0.598
+                      c-0.021,0.014-0.045,0.02-0.064,0.037l-6.498,5.73C0.964,6.548,0.944,6.864,1.126,7.071C1.225,7.183,1.363,7.24,1.501,7.24
+                      c0.118,0,0.236-0.041,0.331-0.125L8,1.677l6.169,5.438C14.265,7.199,14.383,7.24,14.5,7.24c0.139,0,0.276-0.058,0.375-0.169
+                      C15.058,6.864,15.038,6.548,14.831,6.365z"/>
+                  </g>
+                </svg>
+                <span>На главную</span>
+              </a>
             </li>
             <li class="breadcrumbs__item">
               <a class="breadcrumbs__link" href="catalog.html">Каталог</a>
@@ -186,31 +199,86 @@
                 <ul class="filter__list manufact-set__list">
                   <li class="manufact-set__item">
                     <label class="filter__label manufact-set__label">
-                      <input class="manufact-set__checkbox" type="checkbox" name="bosh" checked>
-                      Bosh
+                      <input class="manufact-set__checkbox visually-hidden" type="checkbox" name="bosh" checked>
+                      <svg class="manufact-set__custom-checkbox manufact-set__custom-checkbox_on" display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px" height="23px" viewBox="0 0 27 23" enable-background="new 0 0 27 23" xml:space="preserve">
+                        <g>
+                          <g>
+                            <polygon points="7.285,7.486 4.456,10.315 12.239,18.098 26.171,4.166 23.343,1.337 12.239,12.439"/>
+                            <path d="M21,20c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1h16.908l1.585-1.585C21.051,0.158,20.545,0,20,0 H3C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3v-9.829l-2,2V20z"/>
+                          </g>
+                        </g>
+                      </svg>
+                      <svg class="manufact-set__custom-checkbox manufact-set__custom-checkbox_off" display="none" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 27 23">
+                          <path d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/>
+                      </svg>
+                      Bosch
                     </label>
                   </li>
                   <li class="manufact-set__item manufact-set__item_disabled">
                     <label class="filter__label manufact-set__label">
-                      <input class="manufact-set__checkbox" type="checkbox" name="interscol" disabled>
+                      <input class="manufact-set__checkbox visually-hidden" type="checkbox" name="interscol" disabled>
+                      <svg class="manufact-set__custom-checkbox manufact-set__custom-checkbox_on" display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px" height="23px" viewBox="0 0 27 23" enable-background="new 0 0 27 23" xml:space="preserve">
+                        <g>
+                          <g>
+                            <polygon points="7.285,7.486 4.456,10.315 12.239,18.098 26.171,4.166 23.343,1.337 12.239,12.439"/>
+                            <path d="M21,20c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1h16.908l1.585-1.585C21.051,0.158,20.545,0,20,0 H3C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3v-9.829l-2,2V20z"/>
+                          </g>
+                        </g>
+                      </svg>
+                      <svg class="manufact-set__custom-checkbox manufact-set__custom-checkbox_off" display="none" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 27 23">
+                          <path d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/>
+                      </svg>
                       Интерскол
                     </label>
                   </li>
                   <li class="manufact-set__item">
                     <label class="filter__label manufact-set__label">
-                      <input class="manufact-set__checkbox" type="checkbox" name="makita" checked>
+                      <input class="manufact-set__checkbox visually-hidden" type="checkbox" name="makita" checked>
+                      <svg class="manufact-set__custom-checkbox manufact-set__custom-checkbox_on" display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px" height="23px" viewBox="0 0 27 23" enable-background="new 0 0 27 23" xml:space="preserve">
+                        <g>
+                          <g>
+                            <polygon points="7.285,7.486 4.456,10.315 12.239,18.098 26.171,4.166 23.343,1.337 12.239,12.439"/>
+                            <path d="M21,20c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1h16.908l1.585-1.585C21.051,0.158,20.545,0,20,0 H3C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3v-9.829l-2,2V20z"/>
+                          </g>
+                        </g>
+                      </svg>
+                      <svg class="manufact-set__custom-checkbox manufact-set__custom-checkbox_off" display="none" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 27 23">
+                          <path d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/>
+                      </svg>
                       Makita
                     </label>
                   </li>
                   <li class="manufact-set__item">
                     <label class="filter__label manufact-set__label">
-                      <input class="manufact-set__checkbox" type="checkbox" name="dewalt">
+                      <input class="manufact-set__checkbox visually-hidden" type="checkbox" name="dewalt">
+                      <svg class="manufact-set__custom-checkbox manufact-set__custom-checkbox_on" display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px" height="23px" viewBox="0 0 27 23" enable-background="new 0 0 27 23" xml:space="preserve">
+                        <g>
+                          <g>
+                            <polygon points="7.285,7.486 4.456,10.315 12.239,18.098 26.171,4.166 23.343,1.337 12.239,12.439"/>
+                            <path d="M21,20c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1h16.908l1.585-1.585C21.051,0.158,20.545,0,20,0 H3C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3v-9.829l-2,2V20z"/>
+                          </g>
+                        </g>
+                      </svg>
+                      <svg class="manufact-set__custom-checkbox manufact-set__custom-checkbox_off" display="none" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 27 23">
+                          <path d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/>
+                      </svg>
                       Dewalt
                     </label>
                   </li>
                   <li class="manufact-set__item">
                     <label class="filter__label manufact-set__label">
-                      <input class="manufact-set__checkbox" type="checkbox" name="hitachi">
+                      <input class="manufact-set__checkbox visually-hidden" type="checkbox" name="hitachi">
+                      <svg class="manufact-set__custom-checkbox manufact-set__custom-checkbox_on" display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px" height="23px" viewBox="0 0 27 23" enable-background="new 0 0 27 23" xml:space="preserve">
+                        <g>
+                          <g>
+                            <polygon points="7.285,7.486 4.456,10.315 12.239,18.098 26.171,4.166 23.343,1.337 12.239,12.439"/>
+                            <path d="M21,20c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1h16.908l1.585-1.585C21.051,0.158,20.545,0,20,0 H3C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3v-9.829l-2,2V20z"/>
+                          </g>
+                        </g>
+                      </svg>
+                      <svg class="manufact-set__custom-checkbox manufact-set__custom-checkbox_off" display="none" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 27 23">
+                          <path d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/>
+                      </svg>
                       Hitachi
                     </label>
                   </li>
@@ -222,13 +290,27 @@
                 <ul class="filter__list power-set__list">
                   <li class="power-set__item">
                     <label class="filter__label power-set__label">
-                      <input class="power-set__radio" type="radio" name="power" value="rechargeable" checked>
+                      <input class="power-set__radio visually-hidden" type="radio" name="power" value="rechargeable" checked>
+                      <svg class="power-set__custom-radio power-set__custom-radio_off" display="none" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+                        <path d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"/>
+                      </svg>
+                      <svg class="power-set__custom-radio power-set__custom-radio_on" display="none" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+                        <path d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"/>
+                        <circle cx="12.5" cy="12.5" r="4.5"/>
+                      </svg>
                       Аккумуляторные
                     </label>
                   </li>
-                  <li class="power-set__item power-set__item_disabled">
+                  <li class="power-set__item">
                     <label class="filter__label power-set__label">
-                      <input class="power-set__radio" type="radio" name="power" value="powered" disabled>
+                      <input class="power-set__radio visually-hidden" type="radio" name="power" value="powered">
+                      <svg class="power-set__custom-radio power-set__custom-radio_off" display="none" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+                        <path d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"/>
+                      </svg>
+                      <svg class="power-set__custom-radio power-set__custom-radio_on" display="none" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+                        <path d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"/>
+                        <circle cx="12.5" cy="12.5" r="4.5"/>
+                      </svg>
                       Сетевые
                     </label>
                   </li>
@@ -307,7 +389,7 @@
                       <p class="products__current-price">25500 Р.</p>
                     </div>
                   </li>
-                  <li class="products__item">
+                  <li class="products__item products__item_new">
                     <h3 class="products__title">
                       <a class="products__link" href="#">Перфоратор BOSCH BFG 2000</a>
                     </h3>
@@ -315,7 +397,14 @@
                       <p class="products__current-price">12500 Р.</p>
                     </div>
                     <div class="products__buttons-container">
-                      <a class="products__buy-button" href="#">Купить</a>
+                      <a class="products__buy-button buy-button" href="#">
+                        <svg class="buy-button__cart-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                            <circle cx="4.5" cy="13.5" r="1.5"/>
+                            <circle cx="12.5" cy="13.5" r="1.5"/>
+                            <path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
+                        </svg>
+                        <span>Купить</span>
+                      </a>
                       <a class="products__bookmark-button" href="#">В закладки</a>
                     </div>
                   </li>
@@ -331,7 +420,7 @@
                       <p class="products__current-price">15500 Р.</p>
                     </div>
                   </li>
-                  <li class="products__item">
+                  <li class="products__item products__item_new">
                     <h3 class="products__title">
                       <a class="products__link" href="#">Перфоратор BOSCH BFG 6000</a>
                     </h3>
@@ -354,7 +443,7 @@
                       <p class="products__current-price">12500 Р.</p>
                     </div>
                   </li>
-                  <li class="products__item">
+                  <li class="products__item  products__item_new">
                     <h3 class="products__title">
                       <a class="products__link" href="#">Перфоратор BOSCH BFG 3000</a>
                     </h3>
