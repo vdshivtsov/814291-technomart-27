@@ -176,11 +176,16 @@
               <fieldset class="filter__set filter__set_price price-set">
                 <legend class="filter__legend price-set__title">Цена:</legend>
                 <!-- Посмотрел варианты реализации двойного ползунка понял, что без JS тут не обойтись. Понравился вот этот вариант https://codepen.io/sakamies/pen/qOEGLJ, что о нем думаешь? Если посмотреть html код инспектором, на страницу добавляется по-факту 2 input'а, что подходит нам для обеспечения доступности, что я и сделал. -->
-                <div class="price-set__container price-set__container_range">
-                  <label class="visually-hidden" for="min-cost-field">Выбрать минимальную цену</label>
+                <div class="price-set__container price-set__container_range price-set__range-controls">
+                  <!-- <label class="visually-hidden" for="min-cost-field">Выбрать минимальную цену</label>
                   <input type="range" name="min-cost" id="min-cost-field" min="0" max="30000" step="1" value="0">
-                  <label class="visually-hidden" for="max-cost-field">Выбрать максимальную цену</label>
+                  <label class="visually-hidden" for="max-cost-field">Выбрать максимальную цену</label> -->
                   <!-- <input type="range" name="max-cost" id="max-cost-field" min="0" max="30000" step="1" value="30000"> -->
+                  <div class="price-set__scale">
+                    <div class="price-set__bar"></div>
+                  </div>
+                  <div class="price-set__range-toggle price-set__range-toggle_min"></div>
+                  <div class="price-set__range-toggle price-set__range-toggle_max"></div>
                 </div>
                 <div class="price-set__container price-set__container_input">
                   <label class="visually-hidden" for="min-cost-val-field">Выбранная минимальная цена</label>
@@ -689,12 +694,12 @@
     </footer>
 
     <section class="popup-add-cart">
-      <h2>Товар добавлен в корзину!</h2>
-      <div>
-        <a href="#">Оформить заказ</a>
-        <button type="button">Продолжить покупки</button>
+      <h2 class="popup-add-cart__title">Товар добавлен в корзину!</h2>
+      <div class="popup-add-cart__container">
+        <a class="popup-add-cart__button popup-add-cart__button_order button button_red" href="#">Оформить заказ</a>
+        <button class="popup-add-cart__button popup-add-cart__button_continue button" type="button">Продолжить покупки</button>
       </div>
-      <button type="button">Закрыть</button>
+      <button class="popup-add-cart__close-button" type="button">Закрыть</button>
     </section>
 
     <!-- A web browser page reloading plugin for the Sublime Text 3 editor -->
