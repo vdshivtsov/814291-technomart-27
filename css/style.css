@@ -1930,6 +1930,16 @@ html {
   box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.502);
 }
 
+.products__item:hover .products__buttons-container,
+.products__item:focus .products__buttons-container {
+  display: flex;
+}
+
+.products__item:hover .products__img-container,
+.products__item:focus .products__img-container {
+  display: none;
+}
+
 .products__title {
   width: 158px;
   margin: 0;
@@ -2004,11 +2014,11 @@ html {
   line-height: 18px;
   font-family: "Cuprum", "Arial", sans-serif;
   text-transform: uppercase;
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   margin-top: 43px;
-  margin-bottom: 53px;
+  margin-bottom: 52px;
 }
 
 .products__buy-button,
