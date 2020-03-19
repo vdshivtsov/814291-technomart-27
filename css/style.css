@@ -1901,6 +1901,7 @@ html {
 .power-set__label {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 /*ниже задаю параметры только тексту (как по заданию) так как чекбоксы мы потом стилизуем отдельно*/
