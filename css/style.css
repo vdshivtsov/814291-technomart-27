@@ -947,10 +947,6 @@ html {
   cursor: default;
 }
 
-.popular-goods {
-  margin-bottom: 20px;
-}
-
 .popular-goods__container,
 .manufactures__container {
   display: flex;
@@ -981,11 +977,7 @@ html {
   margin-bottom: 0;
 }
 
-.popular-goods__list .products__item {
-  margin-bottom: 0;
-}
-
-.popular-goods__list .products__item:last-child {
+.popular-goods__list .products__item:nth-child(4n) {
   margin-right: 0;
 }
 
