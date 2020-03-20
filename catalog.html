@@ -7,18 +7,16 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-
     <header class="header">
       <div class="header__top">
         <div class="header__wrapper_top container">
           <a class="header__logo our-logo" href="index.html">
             <img src="img/logo.svg" width="109" height="19" alt="Логотип компании Техномарт">
           </a>
-
           <form class="header__search search-form" action="https://echo.htmlacademy.ru" method="get">
             <label class="visually-hidden" for="search-field">Строка поиска</label>
             <input class="search-form__input" type="search" name="search" id="search-field" placeholder="Поиск:">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17px" height="17px" viewBox="0 0 17 17" enable-background="new 0 0 17 17" xml:space="preserve">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17px" height="17px" viewbox="0 0 17 17" enable-background="new 0 0 17 17" xml:space="preserve">
             <g id="search-icon">
               </g>
                 <g id="search-icon-2">
@@ -27,11 +25,10 @@
             </svg>
             <button class="visually-hidden" type="submit">Найти</button>
           </form>
-
           <ul class="header__goods-actions goods-actions">
             <li class="goods-actions__item">
               <a class="goods-actions__link goods-actions__link_bookmarks" href="#">
-                <svg version="1.1" id="bookmark-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="16px" viewBox="0 0 14 16" enable-background="new 0 0 14 16" xml:space="preserve">
+                <svg version="1.1" id="bookmark-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="16px" viewbox="0 0 14 16" enable-background="new 0 0 14 16" xml:space="preserve">
                   <path d="M14,15c0,0.55-0.368,0.741-0.818,0.426l-5.363-3.765c-0.45-0.315-1.187-0.315-1.637,0l-5.364,3.765
                   C0.368,15.741,0,15.55,0,15V1c0-0.55,0.45-1,1-1h12c0.55,0,1,0.45,1,1V15z"/>
                 </svg>
@@ -40,7 +37,7 @@
             </li>
             <li class="goods-actions__item">
               <a class="goods-actions__link goods-actions__link_not-empty goods-actions__link_cart" href="#">
-                <svg version="1.1" id="cart-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+                <svg version="1.1" id="cart-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15px" height="15px" viewbox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
                   <g>
                     <circle cx="4.5" cy="13.5" r="1.5"/>
                     <circle cx="12.5" cy="13.5" r="1.5"/>
@@ -56,41 +53,34 @@
           </ul>
         </div>
       </div>
-
       <div class="header__middle">
         <div class="header__wrapper_middle container">
           <p class="header__description">Интернет-магазин строительных материалов<br>и инструментов для ремонта</p>
-
           <div class="header__contacts">
             <div class="header__telephone">
-              <a href="tel:+78125550555">
-                <span class="visually-hidden">Наш телефон:</span>
-                  +7 (812) 555-05-55
+              <a href="tel:+78125550555" aria-label="Наш телефон">
+                +7 (812) 555-05-55
               </a>
             </div>
-            <div class="header__adress">
-              <span class="visually-hidden">Наш адрес:</span>
+            <div class="header__adress" aria-label="Наш адрес">
                 г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
             </div>
           </div>
-
           <section class="header__authorization authorization">
               <h2 class="visually-hidden">Авторизация</h2>
               <div class="authorization__container_name">
-                <a class="authorization__name" href="#">
-                  <span class="visually-hidden">Перейти в личный кабинет пользователя:</span>
-                  <svg version="1.1" id="user-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="18px" viewBox="0 0 20 18" enable-background="new 0 0 20 18" xml:space="preserve">
+                <a class="authorization__name" href="#" aria-label="Перейти в личный кабинет пользователя">
+                  <svg version="1.1" id="user-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="18px" viewbox="0 0 20 18" enable-background="new 0 0 20 18" xml:space="preserve">
                     <path d="M17.881,14.166c-2.144-0.735-4.256-1.666-5.207-2.39c-0.657-0.501-0.77-1.618-0.517-2.415 c1.118-0.903,1.864-2.477,1.864-4.278C14.021,2.276,12.221,0,10,0S5.979,2.276,5.979,5.083c0,1.801,0.746,3.374,1.863,4.277 c0.253,0.798,0.141,1.915-0.517,2.416c-0.95,0.724-3.063,1.654-5.207,2.39S0,18,0,18h20C20,18,20.025,14.901,17.881,14.166z"/>
                   </svg>
                   <span>Равшан Джамшутович</span>
                 </a>
-                <a class="authorization__logout" href="#">
-                  <span class="visually-hidden">Выход</span>
-                  <svg class="authorization__logout-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17">
-                      <g>
-                        <path d="M21 8.5L12.125 0v6h-6v5h6v6z"/>
-                        <path d="M3.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H4.116C1.938 0 1.112 1.81 1.087 3.027v10.946C1.112 15.189 1.938 17 4.116 17h5.027v-1.99H4.116c-.839 0-.992-.683-1.01-1.058z"/>
-                      </g>
+                <a class="authorization__logout" href="#" aria-label="Выход">
+                  <svg class="authorization__logout-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewbox="0 0 21 17">
+                    <g>
+                      <path d="M21 8.5L12.125 0v6h-6v5h6v6z"/>
+                      <path d="M3.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H4.116C1.938 0 1.112 1.81 1.087 3.027v10.946C1.112 15.189 1.938 17 4.116 17h5.027v-1.99H4.116c-.839 0-.992-.683-1.01-1.058z"/>
+                    </g>
                   </svg>
                 </a>
               </div>
@@ -101,8 +91,6 @@
             </section>
         </div>
       </div>
-
-
       <nav class="header__navigation navigation container">
         <ul class="navigation__list">
           <li class="navigation__item">
@@ -129,16 +117,14 @@
         </ul>
       </nav>
     </header>
-
     <main class="main main_catalog catalog">
       <div class="container">
         <div class="catalog__top">
           <h1 class="main__title">Перфораторы</h1>
-
           <ul class="main__breadcrumbs breadcrumbs">
             <li class="breadcrumbs__item">
               <a class="breadcrumbs__link" href="index.html">
-                <svg version="1.1" id="home-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#C1C6CE00" x="0px" y="0px" width="0px" height="12px" viewBox="0 0 15 12" enable-background="new 0 0 15 12" xml:space="preserve">
+                <svg version="1.1" id="home-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#C1C6CE00" x="0px" y="0px" width="0px" height="12px" viewbox="0 0 15 12" enable-background="new 0 0 15 12" xml:space="preserve">
                   <g>
                     <polygon points="3,8 3,12 7,12 7,8 9,8 9,12 13,12 13,8 8,3.516   "/>
                     <path d="M14.831,6.365L13,4.751V0h-2v2.987L8.332,0.635c-0.02-0.017-0.043-0.023-0.064-0.037
@@ -162,50 +148,34 @@
               <a class="breadcrumbs__link">Перфораторы</a></li>
           </ul>
         </div>
-
         <div class="catalog__middle">
           <section class="filters">
-
-            <!-- Красная зона -->
-
             <h2 class="filters__title">Фильтр:</h2>
-
-            <!-- Были проблемы с разделителем "-" в атрибуде oninput формы (браузер выдавал ошибку "catalog.html:115 Uncaught SyntaxError: Invalid left-hand side in assignment" считая, что это бинарный операнд "минус"), пришлось отступить от стиля оформления кода. Вместо min-cost-val, min-cost, max-cost-val, max-cost написал стилем camelCase minCostVal, minCost, maxCostVal, maxCost, чтобы решить проблему. -->
             <form class="filters__form filter" action="https://echo.htmlacademy.ru" method="get">
-
               <fieldset class="filter__set filter__set_price price-set">
                 <legend class="filter__legend price-set__title">Цена:</legend>
-                <!-- Посмотрел варианты реализации двойного ползунка понял, что без JS тут не обойтись. Понравился вот этот вариант https://codepen.io/sakamies/pen/qOEGLJ, что о нем думаешь? Если посмотреть html код инспектором, на страницу добавляется по-факту 2 input'а, что подходит нам для обеспечения доступности, что я и сделал. -->
                 <div class="price-set__container price-set__container_range price-set__range-controls">
-                  <!-- <label class="visually-hidden" for="min-cost-field">Выбрать минимальную цену</label>
-                  <input type="range" name="min-cost" id="min-cost-field" min="0" max="30000" step="1" value="0">
-                  <label class="visually-hidden" for="max-cost-field">Выбрать максимальную цену</label> -->
-                  <!-- <input type="range" name="max-cost" id="max-cost-field" min="0" max="30000" step="1" value="30000"> -->
                   <div class="price-set__scale">
                     <div class="price-set__bar"></div>
+                    <div class="price-set__range-toggle price-set__range-toggle_min"></div>
+                    <div class="price-set__range-toggle price-set__range-toggle_max"></div>
                   </div>
-                  <div class="price-set__range-toggle price-set__range-toggle_min"></div>
-                  <div class="price-set__range-toggle price-set__range-toggle_max"></div>
                 </div>
                 <div class="price-set__container price-set__container_input">
                   <label class="visually-hidden" for="min-cost-val-field">Выбранная минимальная цена</label>
                   <label class="visually-hidden" for="max-cost-val-field">Выбранная максимальная цена</label>
                   <input class="price-set__input price-set__input_min-cost" type="text" name="min-cost-val" id="min-cost-val-field" value="0">
-                  <!-- Для спана потом сможем задать отступы. Смотриться, имхо, уместно, так как output - инлайновые свойства. -->
                   <span class="price-set__separator">&ndash;</span>
                   <input class="price-set__input price-set__input_max-cost" type="text" name="max-cost-val" id="max-cost-val-field" value="30000">
                 </div>
               </fieldset>
-
-              <!-- Конец красной зоны -->
-
               <fieldset class="filter__set filter__set_manufact manufact-set">
                 <legend class="filter__legend manufact-set__title">Производители:</legend>
                 <ul class="filter__list manufact-set__list">
                   <li class="manufact-set__item">
                     <label class="filter__label manufact-set__label">
                       <input class="manufact-set__checkbox visually-hidden" type="checkbox" name="bosh" checked>
-                      <svg class="manufact-set__custom-checkbox manufact-set__custom-checkbox_on" display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px" height="23px" viewBox="0 0 27 23" enable-background="new 0 0 27 23" xml:space="preserve">
+                      <svg class="manufact-set__custom-checkbox manufact-set__custom-checkbox_on" display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27" height="23" viewbox="0 0 27 23" enable-background="new 0 0 27 23" xml:space="preserve">
                         <g>
                           <g>
                             <polygon points="7.285,7.486 4.456,10.315 12.239,18.098 26.171,4.166 23.343,1.337 12.239,12.439"/>
@@ -213,7 +183,7 @@
                           </g>
                         </g>
                       </svg>
-                      <svg class="manufact-set__custom-checkbox manufact-set__custom-checkbox_off" display="none" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 27 23">
+                      <svg class="manufact-set__custom-checkbox manufact-set__custom-checkbox_off" display="none" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewbox="0 0 27 23">
                           <path d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/>
                       </svg>
                       Bosch
@@ -222,7 +192,7 @@
                   <li class="manufact-set__item manufact-set__item_disabled">
                     <label class="filter__label manufact-set__label">
                       <input class="manufact-set__checkbox visually-hidden" type="checkbox" name="interscol" disabled>
-                      <svg class="manufact-set__custom-checkbox manufact-set__custom-checkbox_on" display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px" height="23px" viewBox="0 0 27 23" enable-background="new 0 0 27 23" xml:space="preserve">
+                      <svg class="manufact-set__custom-checkbox manufact-set__custom-checkbox_on" display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27" height="23" viewbox="0 0 27 23" enable-background="new 0 0 27 23" xml:space="preserve">
                         <g>
                           <g>
                             <polygon points="7.285,7.486 4.456,10.315 12.239,18.098 26.171,4.166 23.343,1.337 12.239,12.439"/>
@@ -230,7 +200,7 @@
                           </g>
                         </g>
                       </svg>
-                      <svg class="manufact-set__custom-checkbox manufact-set__custom-checkbox_off" display="none" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 27 23">
+                      <svg class="manufact-set__custom-checkbox manufact-set__custom-checkbox_off" display="none" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewbox="0 0 27 23">
                           <path d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/>
                       </svg>
                       Интерскол
@@ -239,7 +209,7 @@
                   <li class="manufact-set__item">
                     <label class="filter__label manufact-set__label">
                       <input class="manufact-set__checkbox visually-hidden" type="checkbox" name="makita" checked>
-                      <svg class="manufact-set__custom-checkbox manufact-set__custom-checkbox_on" display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px" height="23px" viewBox="0 0 27 23" enable-background="new 0 0 27 23" xml:space="preserve">
+                      <svg class="manufact-set__custom-checkbox manufact-set__custom-checkbox_on" display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27" height="23" viewbox="0 0 27 23" enable-background="new 0 0 27 23" xml:space="preserve">
                         <g>
                           <g>
                             <polygon points="7.285,7.486 4.456,10.315 12.239,18.098 26.171,4.166 23.343,1.337 12.239,12.439"/>
@@ -247,7 +217,7 @@
                           </g>
                         </g>
                       </svg>
-                      <svg class="manufact-set__custom-checkbox manufact-set__custom-checkbox_off" display="none" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 27 23">
+                      <svg class="manufact-set__custom-checkbox manufact-set__custom-checkbox_off" display="none" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewbox="0 0 27 23">
                           <path d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/>
                       </svg>
                       Makita
@@ -256,7 +226,7 @@
                   <li class="manufact-set__item">
                     <label class="filter__label manufact-set__label">
                       <input class="manufact-set__checkbox visually-hidden" type="checkbox" name="dewalt">
-                      <svg class="manufact-set__custom-checkbox manufact-set__custom-checkbox_on" display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px" height="23px" viewBox="0 0 27 23" enable-background="new 0 0 27 23" xml:space="preserve">
+                      <svg class="manufact-set__custom-checkbox manufact-set__custom-checkbox_on" display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27" height="23" viewbox="0 0 27 23" enable-background="new 0 0 27 23" xml:space="preserve">
                         <g>
                           <g>
                             <polygon points="7.285,7.486 4.456,10.315 12.239,18.098 26.171,4.166 23.343,1.337 12.239,12.439"/>
@@ -264,7 +234,7 @@
                           </g>
                         </g>
                       </svg>
-                      <svg class="manufact-set__custom-checkbox manufact-set__custom-checkbox_off" display="none" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 27 23">
+                      <svg class="manufact-set__custom-checkbox manufact-set__custom-checkbox_off" display="none" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewbox="0 0 27 23">
                           <path d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/>
                       </svg>
                       Dewalt
@@ -273,7 +243,7 @@
                   <li class="manufact-set__item">
                     <label class="filter__label manufact-set__label">
                       <input class="manufact-set__checkbox visually-hidden" type="checkbox" name="hitachi">
-                      <svg class="manufact-set__custom-checkbox manufact-set__custom-checkbox_on" display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px" height="23px" viewBox="0 0 27 23" enable-background="new 0 0 27 23" xml:space="preserve">
+                      <svg class="manufact-set__custom-checkbox manufact-set__custom-checkbox_on" display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27" height="23" viewbox="0 0 27 23" enable-background="new 0 0 27 23" xml:space="preserve">
                         <g>
                           <g>
                             <polygon points="7.285,7.486 4.456,10.315 12.239,18.098 26.171,4.166 23.343,1.337 12.239,12.439"/>
@@ -281,7 +251,7 @@
                           </g>
                         </g>
                       </svg>
-                      <svg class="manufact-set__custom-checkbox manufact-set__custom-checkbox_off" display="none" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 27 23">
+                      <svg class="manufact-set__custom-checkbox manufact-set__custom-checkbox_off" display="none" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewbox="0 0 27 23">
                           <path d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/>
                       </svg>
                       Hitachi
@@ -289,17 +259,16 @@
                   </li>
                 </ul>
               </fieldset>
-
               <fieldset class="filter__set filter__set_power power-set">
                 <legend class="filter__legend power-set__title">Питание:</legend>
                 <ul class="filter__list power-set__list">
                   <li class="power-set__item">
                     <label class="filter__label power-set__label">
                       <input class="power-set__radio visually-hidden" type="radio" name="power" value="rechargeable" checked>
-                      <svg class="power-set__custom-radio power-set__custom-radio_off" display="none" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+                      <svg class="power-set__custom-radio power-set__custom-radio_off" display="none" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewbox="0 0 25 25">
                         <path d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"/>
                       </svg>
-                      <svg class="power-set__custom-radio power-set__custom-radio_on" display="none" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+                      <svg class="power-set__custom-radio power-set__custom-radio_on" display="none" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewbox="0 0 25 25">
                         <path d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"/>
                         <circle cx="12.5" cy="12.5" r="4.5"/>
                       </svg>
@@ -309,10 +278,10 @@
                   <li class="power-set__item">
                     <label class="filter__label power-set__label">
                       <input class="power-set__radio visually-hidden" type="radio" name="power" value="powered">
-                      <svg class="power-set__custom-radio power-set__custom-radio_off" display="none" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+                      <svg class="power-set__custom-radio power-set__custom-radio_off" display="none" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewbox="0 0 25 25">
                         <path d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"/>
                       </svg>
-                      <svg class="power-set__custom-radio power-set__custom-radio_on" display="none" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+                      <svg class="power-set__custom-radio power-set__custom-radio_on" display="none" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewbox="0 0 25 25">
                         <path d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"/>
                         <circle cx="12.5" cy="12.5" r="4.5"/>
                       </svg>
@@ -324,283 +293,263 @@
               <button class="filter__button button" type="submit">Показать</button>
             </form>
           </section>
-
-          <!-- Красная зона -->
           <div class="wrapper">
             <section class="sorting">
-              <!-- Тут, по-моему, ничего менять не нужно, все логически правильно разделено, это не форма, так как предполагается, что будет осуществляться сортировка уже загруженных на страницу элементов, добавил только описание спискам для слабовидящих -->
-                <h2 class="sorting__title">Сортировка:</h2>
-
-                <ul class="sorting__criterion criterion-list" aria-label="Выбрать критерий сортировки">
-                  <li class="criterion-list__item">
-                    <a class="sorting__link sorting__link_current criterion-list__link criterion-list__link_current" href="#">По цене</a>
-                  </li>
-                  <li class="criterion-list__item">
-                    <a class="sorting__link criterion-list__link" href="#">По типу</a>
-                  </li>
-                  <li class="criterion-list__item">
-                    <a class="sorting__link criterion-list__link" href="#">По функционалу</a>
-                  </li>
-                </ul>
-
-                <ul class="sorting__direction direction-list"  aria-label="Выбрать направление сортировки">
-                  <li class="direction-list__item">
-                    <a class="sorting__link sorting__link_current direction-list__link direction-list__link_current" href="#">
-                      <span class="visually-hidden">По убыванию</span>
-                      <svg class="direction-list__icon direction-list__icon_current direction-list__icon_down" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
-                        <polygon points="5.5,0 0,10 11,10 "/>
+              <h2 class="sorting__title">Сортировка:</h2>
+              <ul class="sorting__criterion criterion-list" aria-label="Выбрать критерий сортировки">
+                <li class="criterion-list__item">
+                  <a class="sorting__link sorting__link_current criterion-list__link criterion-list__link_current" href="#">По цене</a>
+                </li>
+                <li class="criterion-list__item">
+                  <a class="sorting__link criterion-list__link" href="#">По типу</a>
+                </li>
+                <li class="criterion-list__item">
+                  <a class="sorting__link criterion-list__link" href="#">По функционалу</a>
+                </li>
+              </ul>
+              <ul class="sorting__direction direction-list"  aria-label="Выбрать направление сортировки">
+                <li class="direction-list__item">
+                  <a class="sorting__link sorting__link_current direction-list__link direction-list__link_current" aria-label="По убыванию" href="#">
+                    <svg class="direction-list__icon direction-list__icon_current direction-list__icon_down" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11px" height="10px" viewbox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+                      <polygon points="5.5,0 0,10 11,10 "/>
+                    </svg>
+                  </a>
+                </li>
+                <li class="direction-list__item">
+                  <a class="sorting__link direction-list__link" aria-label="По возрастанию" href="#">
+                    <svg class="direction-list__icon direction-list__icon_up" version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11px" height="10px" viewbox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+                      <polyline points="5.5,10 0,0 11,0 "/>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </section>
+            <section class="goods">
+              <h2 class="visually-hidden">Перечень товаров</h2>
+              <ul class="goods__list products">
+                <li class="products__item">
+                  <h3 class="products__title">
+                    <a class="products__link" href="#">Перфоратор BOSCH BFG 3000</a>
+                  </h3>
+                  <div class="products__img-container">
+                    <img class="products__img" src="img/perforator-2.jpg" width="145" height="100" alt="Перфоратор BOSCH BFG 3000 - максимальная производительность при минимуме вибраций. Высокая производительность сверления и увеличение производительности долбления на 20 % по сравнению с другими перфораторами этого класса. Низкий уровень вибрации (всего 13 м/s²) для не утомительной работы благодаря системе гашения вибрации Vibration Control от Bosch. Сменный патрон для быстрой смены между ударным сверлением в бетоне и сверлением без удара в древесине и металле.">
+                  </div>
+                  <div class="products__price-container">
+                    <p class="products__old-price">22500 Р.</p>
+                    <p class="products__current-price">15500 Р.</p>
+                  </div>
+                  <div class="products__buttons-container">
+                    <a class="products__buy-button buy-button" href="#">
+                      <svg class="buy-button__cart-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewbox="0 0 15 15">
+                          <circle cx="4.5" cy="13.5" r="1.5"/>
+                          <circle cx="12.5" cy="13.5" r="1.5"/>
+                          <path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
                       </svg>
+                      <span>Купить</span>
                     </a>
-                  </li>
-                  <li class="direction-list__item">
-                    <a class="sorting__link direction-list__link" href="#">
-                      <span class="visually-hidden">По возрастанию</span>
-                      <svg class="direction-list__icon direction-list__icon_up" version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
-                        <polyline points="5.5,10 0,0 11,0 "/>
+                    <a class="products__bookmark-button" href="#">В закладки</a>
+                  </div>
+                </li>
+                <li class="products__item">
+                  <h3 class="products__title">
+                    <a class="products__link" href="#">Перфоратор BOSCH BFG 6000</a>
+                  </h3>
+                  <div class="products__img-container">
+                    <img class="products__img" src="img/perforator-3.jpg" width="145" height="100" alt="Перфоратор BOSCH BFG 6000 - самый быстрый универсальный перфоратор в классе. Разнообразное применение для долбежных и сверлильных работ, а также при выполнении работ с полой сверлильной коронкой. Сверлит на 30% быстрее по сравнению с аналогичными инструментами других производителей. Низкий уровень вибрации для неутомительной работы благодаря системе гашения вибрации Vibration Control от Bosch.">
+                  </div>
+                  <div class="products__price-container">
+                    <p class="products__old-price">30500 Р.</p>
+                    <p class="products__current-price">25500 Р.</p>
+                  </div>
+                  <div class="products__buttons-container">
+                    <a class="products__buy-button buy-button" href="#">
+                      <svg class="buy-button__cart-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewbox="0 0 15 15">
+                          <circle cx="4.5" cy="13.5" r="1.5"/>
+                          <circle cx="12.5" cy="13.5" r="1.5"/>
+                          <path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
                       </svg>
+                      <span>Купить</span>
                     </a>
-                  </li>
-                </ul>
-
-              </section>
-
-              <!-- Конец красной зоны -->
-
-              <section class="goods">
-                <h2 class="visually-hidden">Перечень товаров</h2>
-
-                <ul class="goods__list products">
-                  <li class="products__item">
-                    <h3 class="products__title">
-                      <a class="products__link" href="#">Перфоратор BOSCH BFG 3000</a>
-                    </h3>
-                    <div class="products__img-container">
-                      <img class="products__img" src="img/perforator-2.jpg" width="145" height="100" alt="Перфоратор BOSCH BFG 3000 - максимальная производительность при минимуме вибраций. Высокая производительность сверления и увеличение производительности долбления на 20 % по сравнению с другими перфораторами этого класса. Низкий уровень вибрации (всего 13 м/s²) для не утомительной работы благодаря системе гашения вибрации Vibration Control от Bosch. Сменный патрон для быстрой смены между ударным сверлением в бетоне и сверлением без удара в древесине и металле.">
-                    </div>
-                    <div class="products__price-container">
-                      <p class="products__old-price">22500 Р.</p>
-                      <p class="products__current-price">15500 Р.</p>
-                    </div>
-                    <div class="products__buttons-container">
-                      <a class="products__buy-button buy-button" href="#">
-                        <svg class="buy-button__cart-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
-                            <circle cx="4.5" cy="13.5" r="1.5"/>
-                            <circle cx="12.5" cy="13.5" r="1.5"/>
-                            <path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
-                        </svg>
-                        <span>Купить</span>
-                      </a>
-                      <a class="products__bookmark-button" href="#">В закладки</a>
-                    </div>
-                  </li>
-                  <li class="products__item">
-                    <h3 class="products__title">
-                      <a class="products__link" href="#">Перфоратор BOSCH BFG 6000</a>
-                    </h3>
-                    <div class="products__img-container">
-                      <img class="products__img" src="img/perforator-3.jpg" width="145" height="100" alt="Перфоратор BOSCH BFG 6000 - самый быстрый универсальный перфоратор в классе. Разнообразное применение для долбежных и сверлильных работ, а также при выполнении работ с полой сверлильной коронкой. Сверлит на 30% быстрее по сравнению с аналогичными инструментами других производителей. Низкий уровень вибрации для неутомительной работы благодаря системе гашения вибрации Vibration Control от Bosch.">
-                    </div>
-                    <div class="products__price-container">
-                      <p class="products__old-price">30500 Р.</p>
-                      <p class="products__current-price">25500 Р.</p>
-                    </div>
-                    <div class="products__buttons-container">
-                      <a class="products__buy-button buy-button" href="#">
-                        <svg class="buy-button__cart-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
-                            <circle cx="4.5" cy="13.5" r="1.5"/>
-                            <circle cx="12.5" cy="13.5" r="1.5"/>
-                            <path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
-                        </svg>
-                        <span>Купить</span>
-                      </a>
-                      <a class="products__bookmark-button" href="#">В закладки</a>
-                    </div>
-                  </li>
-                  <li class="products__item products__item_new">
-                    <h3 class="products__title">
-                      <a class="products__link" href="#">Перфоратор BOSCH BFG 2000</a>
-                    </h3>
-                    <div class="products__img-container">
-                      <img class="products__img" src="img/perforator-3.jpg" width="145" height="100" alt="Перфоратор BOSCH BFG 6000 - самый быстрый универсальный перфоратор в классе. Разнообразное применение для долбежных и сверлильных работ, а также при выполнении работ с полой сверлильной коронкой. Сверлит на 30% быстрее по сравнению с аналогичными инструментами других производителей. Низкий уровень вибрации для неутомительной работы благодаря системе гашения вибрации Vibration Control от Bosch.">
-                    </div>
-                    <div class="products__price-container">
-                      <p class="products__current-price">12500 Р.</p>
-                    </div>
-                    <div class="products__buttons-container">
-                      <a class="products__buy-button buy-button" href="#">
-                        <svg class="buy-button__cart-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
-                            <circle cx="4.5" cy="13.5" r="1.5"/>
-                            <circle cx="12.5" cy="13.5" r="1.5"/>
-                            <path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
-                        </svg>
-                        <span>Купить</span>
-                      </a>
-                      <a class="products__bookmark-button" href="#">В закладки</a>
-                    </div>
-                  </li>
-                  <li class="products__item">
-                    <h3 class="products__title">
-                      <a class="products__link" href="#">Перфоратор BOSCH BFG 3000</a>
-                    </h3>
-                    <div class="products__img-container">
-                      <img class="products__img" src="img/perforator-2.jpg" width="145" height="100" alt="Перфоратор BOSCH BFG 3000 - максимальная производительность при минимуме вибраций. Высокая производительность сверления и увеличение производительности долбления на 20 % по сравнению с другими перфораторами этого класса. Низкий уровень вибрации для не утомительной работы благодаря системе гашения вибрации Vibration Control от Bosch. Сменный патрон для быстрой смены между ударным сверлением в бетоне и сверлением без удара в древесине и металле.">
-                    </div>
-                    <div class="products__price-container">
-                      <p class="products__old-price">22500 Р.</p>
-                      <p class="products__current-price">15500 Р.</p>
-                    </div>
-                    <div class="products__buttons-container">
-                      <a class="products__buy-button buy-button" href="#">
-                        <svg class="buy-button__cart-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
-                            <circle cx="4.5" cy="13.5" r="1.5"/>
-                            <circle cx="12.5" cy="13.5" r="1.5"/>
-                            <path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
-                        </svg>
-                        <span>Купить</span>
-                      </a>
-                      <a class="products__bookmark-button" href="#">В закладки</a>
-                    </div>
-                  </li>
-                  <li class="products__item products__item_new">
-                    <h3 class="products__title">
-                      <a class="products__link" href="#">Перфоратор BOSCH BFG 6000</a>
-                    </h3>
-                    <div class="products__img-container">
-                      <img class="products__img" src="img/perforator-3.jpg" width="145" height="100" alt="Перфоратор BOSCH BFG 6000 - самый быстрый универсальный перфоратор в классе. Разнообразное применение для долбежных и сверлильных работ, а также при выполнении работ с полой сверлильной коронкой. Сверлит на 30% быстрее по сравнению с аналогичными инструментами других производителей. Низкий уровень вибрации для неутомительной работы благодаря системе гашения вибрации Vibration Control от Bosch.">
-                    </div>
-                    <div class="products__price-container">
-                      <p class="products__old-price">30500 Р.</p>
-                      <p class="products__current-price">25500 Р.</p>
-                    </div>
-                    <div class="products__buttons-container">
-                      <a class="products__buy-button buy-button" href="#">
-                        <svg class="buy-button__cart-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
-                            <circle cx="4.5" cy="13.5" r="1.5"/>
-                            <circle cx="12.5" cy="13.5" r="1.5"/>
-                            <path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
-                        </svg>
-                        <span>Купить</span>
-                      </a>
-                      <a class="products__bookmark-button" href="#">В закладки</a>
-                    </div>
-                  </li>
-                  <li class="products__item">
-                    <h3 class="products__title">
-                      <a class="products__link" href="#">Перфоратор BOSCH BFG 2000</a>
-                    </h3>
-                    <div class="products__img-container">
-                      <img class="products__img" src="img/perforator-2.jpg" width="145" height="100" alt="Перфоратор BOSCH BFG 2000 - имеет два режима работы - сверление с ударом и чистый удар. Выбор между ними осуществляется посредством тумблера. Благодаря патрону SDS-max, можно устанавливать профессиональную оснастку, а также быстро менять её в процессе работы. Дополнительная рукоять помогает прочно держать инструмент в руках, что особенно актуально для работы в режиме долбления.">
-                    </div>
-                    <div class="products__price-container">
-                      <p class="products__current-price">12500 Р.</p>
-                    </div>
-                    <div class="products__buttons-container">
-                      <a class="products__buy-button buy-button" href="#">
-                        <svg class="buy-button__cart-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
-                            <circle cx="4.5" cy="13.5" r="1.5"/>
-                            <circle cx="12.5" cy="13.5" r="1.5"/>
-                            <path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
-                        </svg>
-                        <span>Купить</span>
-                      </a>
-                      <a class="products__bookmark-button" href="#">В закладки</a>
-                    </div>
-                  </li>
-                  <li class="products__item  products__item_new">
-                    <h3 class="products__title">
-                      <a class="products__link" href="#">Перфоратор BOSCH BFG 3000</a>
-                    </h3>
-                    <div class="products__img-container">
-                      <img class="products__img" src="img/perforator-2.jpg" width="145" height="100" alt="Перфоратор BOSCH BFG 3000 - максимальная производительность при минимуме вибраций. Высокая производительность сверления и увеличение производительности долбления на 20 % по сравнению с другими перфораторами этого класса. Низкий уровень вибрации для не утомительной работы благодаря системе гашения вибрации Vibration Control от Bosch. Сменный патрон для быстрой смены между ударным сверлением в бетоне и сверлением без удара в древесине и металле.">
-                    </div>
-                    <div class="products__price-container">
-                      <p class="products__old-price">22500 Р.</p>
-                      <p class="products__current-price">15500 Р.</p>
-                    </div>
-                    <div class="products__buttons-container">
-                      <a class="products__buy-button buy-button" href="#">
-                        <svg class="buy-button__cart-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
-                            <circle cx="4.5" cy="13.5" r="1.5"/>
-                            <circle cx="12.5" cy="13.5" r="1.5"/>
-                            <path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
-                        </svg>
-                        <span>Купить</span>
-                      </a>
-                      <a class="products__bookmark-button" href="#">В закладки</a>
-                    </div>
-                  </li>
-                  <li class="products__item">
-                    <h3 class="products__title">
-                      <a class="products__link" href="#">Перфоратор BOSCH BFG 6000</a>
-                    </h3>
-                    <div class="products__img-container">
-                      <img class="products__img" src="img/perforator-3.jpg" width="145" height="100" alt="Перфоратор BOSCH BFG 6000 - самый быстрый универсальный перфоратор в классе. Разнообразное применение для долбежных и сверлильных работ, а также при выполнении работ с полой сверлильной коронкой. Сверлит на 30% быстрее по сравнению с аналогичными инструментами других производителей. Низкий уровень вибрации для неутомительной работы благодаря системе гашения вибрации Vibration Control от Bosch.">
-                    </div>
-                    <div class="products__price-container">
-                      <p class="products__old-price">30500 Р.</p>
-                      <p class="products__current-price">25500 Р.</p>
-                    </div>
-                    <div class="products__buttons-container">
-                      <a class="products__buy-button buy-button" href="#">
-                        <svg class="buy-button__cart-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
-                            <circle cx="4.5" cy="13.5" r="1.5"/>
-                            <circle cx="12.5" cy="13.5" r="1.5"/>
-                            <path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
-                        </svg>
-                        <span>Купить</span>
-                      </a>
-                      <a class="products__bookmark-button" href="#">В закладки</a>
-                    </div>
-                  </li>
-                  <li class="products__item">
-                    <h3 class="products__title">
-                      <a class="products__link" href="#">Перфоратор BOSCH BFG 2000</a>
-                    </h3>
-                    <div class="products__img-container">
-                      <img class="products__img" src="img/perforator-2.jpg" width="145" height="100" alt="Перфоратор BOSCH BFG 2000 - имеет два режима работы - сверление с ударом и чистый удар. Выбор между ними осуществляется посредством тумблера. Благодаря патрону SDS-max, можно устанавливать профессиональную оснастку, а также быстро менять её в процессе работы. Дополнительная рукоять помогает прочно держать инструмент в руках, что особенно актуально для работы в режиме долбления.">
-                    </div>
-                    <div class="products__price-container">
-                      <p class="products__current-price">12500 Р.</p>
-                    </div>
-                    <div class="products__buttons-container">
-                      <a class="products__buy-button buy-button" href="#">
-                        <svg class="buy-button__cart-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
-                            <circle cx="4.5" cy="13.5" r="1.5"/>
-                            <circle cx="12.5" cy="13.5" r="1.5"/>
-                            <path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
-                        </svg>
-                        <span>Купить</span>
-                      </a>
-                      <a class="products__bookmark-button" href="#">В закладки</a>
-                    </div>
-                  </li>
-                </ul>
-
-                <!-- Красная зона -->
-
-                <ol class="goods__pagination pagination-list" aria-label="Переход на другую страницу">
-                  <li class="pagination-list__item">
-                    <a class="pagination-list__link pagination-list__link_current" aria-label="Перейти на страницу 1">1</a>
-                  </li>
-                  <li>
-                    <a class="pagination-list__link" href="#" aria-label="Перейти на страницу 2">2</a>
-                  </li>
-                  <li>
-                    <a class="pagination-list__link" href="#" aria-label="Перейти на страницу 3">3</a>
-                  </li>
-                  <li>
-                    <a class="pagination-list__link pagination-list__link_next" href="#" aria-label="Перейти на следующую страницу">Следующая</a>
-                  </li>
-                </ol>
-
-              </section>
-            </div>
+                    <a class="products__bookmark-button" href="#">В закладки</a>
+                  </div>
+                </li>
+                <li class="products__item products__item_new">
+                  <h3 class="products__title">
+                    <a class="products__link" href="#">Перфоратор BOSCH BFG 2000</a>
+                  </h3>
+                  <div class="products__img-container">
+                    <img class="products__img" src="img/perforator-3.jpg" width="145" height="100" alt="Перфоратор BOSCH BFG 6000 - самый быстрый универсальный перфоратор в классе. Разнообразное применение для долбежных и сверлильных работ, а также при выполнении работ с полой сверлильной коронкой. Сверлит на 30% быстрее по сравнению с аналогичными инструментами других производителей. Низкий уровень вибрации для неутомительной работы благодаря системе гашения вибрации Vibration Control от Bosch.">
+                  </div>
+                  <div class="products__price-container">
+                    <p class="products__current-price">12500 Р.</p>
+                  </div>
+                  <div class="products__buttons-container">
+                    <a class="products__buy-button buy-button" href="#">
+                      <svg class="buy-button__cart-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewbox="0 0 15 15">
+                          <circle cx="4.5" cy="13.5" r="1.5"/>
+                          <circle cx="12.5" cy="13.5" r="1.5"/>
+                          <path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
+                      </svg>
+                      <span>Купить</span>
+                    </a>
+                    <a class="products__bookmark-button" href="#">В закладки</a>
+                  </div>
+                </li>
+                <li class="products__item">
+                  <h3 class="products__title">
+                    <a class="products__link" href="#">Перфоратор BOSCH BFG 3000</a>
+                  </h3>
+                  <div class="products__img-container">
+                    <img class="products__img" src="img/perforator-2.jpg" width="145" height="100" alt="Перфоратор BOSCH BFG 3000 - максимальная производительность при минимуме вибраций. Высокая производительность сверления и увеличение производительности долбления на 20 % по сравнению с другими перфораторами этого класса. Низкий уровень вибрации для не утомительной работы благодаря системе гашения вибрации Vibration Control от Bosch. Сменный патрон для быстрой смены между ударным сверлением в бетоне и сверлением без удара в древесине и металле.">
+                  </div>
+                  <div class="products__price-container">
+                    <p class="products__old-price">22500 Р.</p>
+                    <p class="products__current-price">15500 Р.</p>
+                  </div>
+                  <div class="products__buttons-container">
+                    <a class="products__buy-button buy-button" href="#">
+                      <svg class="buy-button__cart-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewbox="0 0 15 15">
+                          <circle cx="4.5" cy="13.5" r="1.5"/>
+                          <circle cx="12.5" cy="13.5" r="1.5"/>
+                          <path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
+                      </svg>
+                      <span>Купить</span>
+                    </a>
+                    <a class="products__bookmark-button" href="#">В закладки</a>
+                  </div>
+                </li>
+                <li class="products__item products__item_new">
+                  <h3 class="products__title">
+                    <a class="products__link" href="#">Перфоратор BOSCH BFG 6000</a>
+                  </h3>
+                  <div class="products__img-container">
+                    <img class="products__img" src="img/perforator-3.jpg" width="145" height="100" alt="Перфоратор BOSCH BFG 6000 - самый быстрый универсальный перфоратор в классе. Разнообразное применение для долбежных и сверлильных работ, а также при выполнении работ с полой сверлильной коронкой. Сверлит на 30% быстрее по сравнению с аналогичными инструментами других производителей. Низкий уровень вибрации для неутомительной работы благодаря системе гашения вибрации Vibration Control от Bosch.">
+                  </div>
+                  <div class="products__price-container">
+                    <p class="products__old-price">30500 Р.</p>
+                    <p class="products__current-price">25500 Р.</p>
+                  </div>
+                  <div class="products__buttons-container">
+                    <a class="products__buy-button buy-button" href="#">
+                      <svg class="buy-button__cart-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewbox="0 0 15 15">
+                          <circle cx="4.5" cy="13.5" r="1.5"/>
+                          <circle cx="12.5" cy="13.5" r="1.5"/>
+                          <path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
+                      </svg>
+                      <span>Купить</span>
+                    </a>
+                    <a class="products__bookmark-button" href="#">В закладки</a>
+                  </div>
+                </li>
+                <li class="products__item">
+                  <h3 class="products__title">
+                    <a class="products__link" href="#">Перфоратор BOSCH BFG 2000</a>
+                  </h3>
+                  <div class="products__img-container">
+                    <img class="products__img" src="img/perforator-2.jpg" width="145" height="100" alt="Перфоратор BOSCH BFG 2000 - имеет два режима работы - сверление с ударом и чистый удар. Выбор между ними осуществляется посредством тумблера. Благодаря патрону SDS-max, можно устанавливать профессиональную оснастку, а также быстро менять её в процессе работы. Дополнительная рукоять помогает прочно держать инструмент в руках, что особенно актуально для работы в режиме долбления.">
+                  </div>
+                  <div class="products__price-container">
+                    <p class="products__current-price">12500 Р.</p>
+                  </div>
+                  <div class="products__buttons-container">
+                    <a class="products__buy-button buy-button" href="#">
+                      <svg class="buy-button__cart-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewbox="0 0 15 15">
+                          <circle cx="4.5" cy="13.5" r="1.5"/>
+                          <circle cx="12.5" cy="13.5" r="1.5"/>
+                          <path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
+                      </svg>
+                      <span>Купить</span>
+                    </a>
+                    <a class="products__bookmark-button" href="#">В закладки</a>
+                  </div>
+                </li>
+                <li class="products__item  products__item_new">
+                  <h3 class="products__title">
+                    <a class="products__link" href="#">Перфоратор BOSCH BFG 3000</a>
+                  </h3>
+                  <div class="products__img-container">
+                    <img class="products__img" src="img/perforator-2.jpg" width="145" height="100" alt="Перфоратор BOSCH BFG 3000 - максимальная производительность при минимуме вибраций. Высокая производительность сверления и увеличение производительности долбления на 20 % по сравнению с другими перфораторами этого класса. Низкий уровень вибрации для не утомительной работы благодаря системе гашения вибрации Vibration Control от Bosch. Сменный патрон для быстрой смены между ударным сверлением в бетоне и сверлением без удара в древесине и металле.">
+                  </div>
+                  <div class="products__price-container">
+                    <p class="products__old-price">22500 Р.</p>
+                    <p class="products__current-price">15500 Р.</p>
+                  </div>
+                  <div class="products__buttons-container">
+                    <a class="products__buy-button buy-button" href="#">
+                      <svg class="buy-button__cart-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewbox="0 0 15 15">
+                          <circle cx="4.5" cy="13.5" r="1.5"/>
+                          <circle cx="12.5" cy="13.5" r="1.5"/>
+                          <path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
+                      </svg>
+                      <span>Купить</span>
+                    </a>
+                    <a class="products__bookmark-button" href="#">В закладки</a>
+                  </div>
+                </li>
+                <li class="products__item">
+                  <h3 class="products__title">
+                    <a class="products__link" href="#">Перфоратор BOSCH BFG 6000</a>
+                  </h3>
+                  <div class="products__img-container">
+                    <img class="products__img" src="img/perforator-3.jpg" width="145" height="100" alt="Перфоратор BOSCH BFG 6000 - самый быстрый универсальный перфоратор в классе. Разнообразное применение для долбежных и сверлильных работ, а также при выполнении работ с полой сверлильной коронкой. Сверлит на 30% быстрее по сравнению с аналогичными инструментами других производителей. Низкий уровень вибрации для неутомительной работы благодаря системе гашения вибрации Vibration Control от Bosch.">
+                  </div>
+                  <div class="products__price-container">
+                    <p class="products__old-price">30500 Р.</p>
+                    <p class="products__current-price">25500 Р.</p>
+                  </div>
+                  <div class="products__buttons-container">
+                    <a class="products__buy-button buy-button" href="#">
+                      <svg class="buy-button__cart-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewbox="0 0 15 15">
+                          <circle cx="4.5" cy="13.5" r="1.5"/>
+                          <circle cx="12.5" cy="13.5" r="1.5"/>
+                          <path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
+                      </svg>
+                      <span>Купить</span>
+                    </a>
+                    <a class="products__bookmark-button" href="#">В закладки</a>
+                  </div>
+                </li>
+                <li class="products__item">
+                  <h3 class="products__title">
+                    <a class="products__link" href="#">Перфоратор BOSCH BFG 2000</a>
+                  </h3>
+                  <div class="products__img-container">
+                    <img class="products__img" src="img/perforator-2.jpg" width="145" height="100" alt="Перфоратор BOSCH BFG 2000 - имеет два режима работы - сверление с ударом и чистый удар. Выбор между ними осуществляется посредством тумблера. Благодаря патрону SDS-max, можно устанавливать профессиональную оснастку, а также быстро менять её в процессе работы. Дополнительная рукоять помогает прочно держать инструмент в руках, что особенно актуально для работы в режиме долбления.">
+                  </div>
+                  <div class="products__price-container">
+                    <p class="products__current-price">12500 Р.</p>
+                  </div>
+                  <div class="products__buttons-container">
+                    <a class="products__buy-button buy-button" href="#">
+                      <svg class="buy-button__cart-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewbox="0 0 15 15">
+                          <circle cx="4.5" cy="13.5" r="1.5"/>
+                          <circle cx="12.5" cy="13.5" r="1.5"/>
+                          <path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
+                      </svg>
+                      <span>Купить</span>
+                    </a>
+                    <a class="products__bookmark-button" href="#">В закладки</a>
+                  </div>
+                </li>
+              </ul>
+              <ol class="goods__pagination pagination-list" aria-label="Переход на другую страницу">
+                <li class="pagination-list__item">
+                  <a class="pagination-list__link pagination-list__link_current" aria-label="Перейти на страницу 1">1</a>
+                </li>
+                <li>
+                  <a class="pagination-list__link" href="#" aria-label="Перейти на страницу 2">2</a>
+                </li>
+                <li>
+                  <a class="pagination-list__link" href="#" aria-label="Перейти на страницу 3">3</a>
+                </li>
+                <li>
+                  <a class="pagination-list__link pagination-list__link_next" href="#" aria-label="Перейти на следующую страницу">Следующая</a>
+                </li>
+              </ol>
+            </section>
           </div>
         </div>
-
-
-
-
+      </div>
       <section class="about-perforators">
         <div class="container">
           <h2 class="about-perforators__title section-title">Пара слов о перфораторах</h2>
@@ -611,15 +560,11 @@
           </p>
         </div>
       </section>
-
-    <!-- Конец красной зоны -->
-
     </main>
-
     <footer class="footer">
       <div class="footer__container-top footer__wrapper container">
         <div class="footer__logo our-logo">
-          <img src="img/logo.svg" width="138" height="23" alt="Логотип компании Техномарт">
+          <img src="img/logo-footer.svg" width="138" height="23" alt="Логотип компании Техномарт">
         </div>
         <p class="footer__contacts">
           <span class="visually-hidden">Наш адрес:</span>
@@ -644,7 +589,6 @@
             <a href="#">Контакты</a>
           </li>
         </ul>
-
         <ul class="footer__list footer__list_catalog-map">
           <li>
             <a href="#">Материалы</a>
@@ -660,14 +604,11 @@
           </li>
         </ul>
       </div>
-
       <div class="footer__container-bottom">
         <div class="footer__wrapper footer__wrapper_bottom container">
-          <p class="footer__copyright">
-            <span class="visually-hidden">Копирайт</span>
+          <p class="footer__copyright" aria-label="Копирайт">
             © 2010–2019 Компания «Техномарт» Все права защищены
           </p>
-
           <ul class="footer__social social-list">
             <li>
               <a class="social-list__link social-list__link_vk" href="#"><span class="visually-hidden">Вконтакте</span></a>
@@ -679,7 +620,6 @@
               <a class="social-list__link social-list__link_ig" href="#"><span class="visually-hidden">Инстаграм</span></a>
             </li>
           </ul>
-
           <p class="footer__callback">
             Обратная связь: <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </p>
@@ -688,11 +628,7 @@
           </p>
         </div>
       </div>
-
-
-
     </footer>
-
     <section class="popup-add-cart">
       <h2 class="popup-add-cart__title">Товар добавлен в корзину!</h2>
       <div class="popup-add-cart__container">
@@ -701,8 +637,5 @@
       </div>
       <button class="popup-add-cart__close-button" type="button">Закрыть</button>
     </section>
-
-    <!-- A web browser page reloading plugin for the Sublime Text 3 editor -->
-    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
   </body>
 </html>
