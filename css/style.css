@@ -1707,14 +1707,14 @@ html {
 .power-set__custom-radio_off {
   display: inline-block;
 
-  vertical-align: center;
+  vertical-align: middle;
 }
 
 .manufact-set__checkbox:checked ~ .manufact-set__custom-checkbox_on,
 .power-set__radio:checked ~ .power-set__custom-radio_on {
   display: inline-block;
 
-  vertical-align: center;
+  vertical-align: middle;
 }
 
 .manufact-set__checkbox:checked ~ .manufact-set__custom-checkbox_off,
