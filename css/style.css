@@ -2429,5 +2429,5 @@ html {
 .popup-map,
 .popup-write-us,
 .popup-add-cart {
-  /*display: none;*/
+  display: none;
 }
